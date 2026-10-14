@@ -1,0 +1,27 @@
+/* 1.0.62: bulk action controls use the same design vocabulary as the main app. */
+.bulk-selection-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 16px;min-width:0}
+.bulk-selection-bar>button.ghost{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:9px 17px;border:1px solid #42628b;border-radius:11px;background:#192a41;color:#dfebfb;font-size:13px;font-weight:650;line-height:1.2;box-shadow:inset 0 1px 0 #ffffff0a;transition:background .15s,border-color .15s}
+.bulk-selection-bar>button.ghost:hover{border-color:#719de0;background:#203a59}
+.bulk-selection-bar>button.ghost[aria-pressed=true]{background:#253c5e;border-color:#729fe7}
+.bulk-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;min-width:0;padding:5px 7px;border:1px solid #32455e;border-radius:13px;background:#111d2e;max-width:100%}
+.bulk-actions[hidden]{display:none!important}
+.bulk-counter{font-size:12px;font-weight:700;color:#dce8f9;white-space:nowrap;padding:5px 9px;letter-spacing:.01em}
+.bulk-actions>button.mini{appearance:none;display:inline-flex;justify-content:center;align-items:center;min-height:34px;padding:8px 13px;border:1px solid #3b5678!important;border-radius:9px;background:#1a2a40!important;color:#d5e6ff!important;font-family:inherit;font-size:12px;font-weight:600;line-height:1.25;white-space:normal;max-width:100%;text-align:center;box-shadow:none;transition:background .15s,border-color .15s,transform .1s}
+.bulk-actions>button.mini:hover:not(:disabled){background:#284367!important;border-color:#719adb!important;color:#fff!important}
+.bulk-actions>button.mini:active:not(:disabled){transform:translateY(1px)}
+.bulk-actions>button.mini.danger{background:#35212c!important;border-color:#95596a!important;color:#ffcad2!important}
+.bulk-actions>button.mini.danger:hover:not(:disabled){background:#492736!important;border-color:#d57988!important}
+.bulk-actions button:disabled{opacity:.55;cursor:not-allowed}
+.bulk-hidden-toggle{display:inline-flex;align-items:center;gap:9px;cursor:pointer;color:#b9cde6;font-size:13px;font-weight:550;padding:8px 10px;border:1px solid transparent;border-radius:10px;min-height:40px}
+.bulk-hidden-toggle:hover{background:#ffffff08;border-color:#344864}
+.bulk-hidden-toggle input{width:18px;height:18px;accent-color:#78aaf4;cursor:pointer}
+.bulk-check{display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #4d6586;border-radius:10px;padding:7px 9px;background:#17263b;color:inherit;min-height:36px;box-shadow:0 2px 8px #0003}
+.bulk-check input{width:18px;height:18px;cursor:pointer;accent-color:#78aaf4}
+#libraryGrid .asset-card{position:relative}
+#libraryGrid .asset-card>.bulk-check{position:absolute;top:10px;left:10px;z-index:3;box-shadow:0 2px 12px #0008}
+.queue-job .jobs-bulk-check{flex:none;margin-right:8px}
+.queue-job:has([data-bulk-job]:checked),.asset-card:has([data-bulk-artifact]:checked){outline:2px solid #78aaf4;outline-offset:-2px}
+.asset-card.is-library-hidden{opacity:.66}
+.bulk-hidden-badge{display:inline-block;border:1px solid currentColor;border-radius:6px;padding:1px 7px;font-size:.75rem;margin-left:5px}
+@media(max-width:900px){.bulk-selection-bar{align-items:flex-start;gap:7px}.bulk-actions{width:100%;gap:7px;padding:9px}.bulk-counter{width:100%;padding:3px 5px 7px}.bulk-actions>button.mini{flex:1 1 auto;min-width:90px;min-height:40px;font-size:12px}.bulk-selection-bar>button.ghost{min-height:41px}#libraryGrid .asset-card>.bulk-check{top:6px;left:6px}}
+@media(max-width:380px){.bulk-actions>button.mini{flex:1 1 45%}}

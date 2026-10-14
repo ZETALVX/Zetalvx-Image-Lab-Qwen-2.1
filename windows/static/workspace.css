@@ -1,0 +1,68 @@
+/* 0.1.0.30 — page layout and explicit Simple/Advanced boundary, no AI defaults. */
+.image-layout-toolbar{display:none}
+.image-output-section{width:100%;min-width:0;margin-top:24px;display:grid;gap:22px;clear:both}
+.image-output-section>.live-queue-panel,.image-output-section>.studio-history-panel{margin:0;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--panel);min-width:0}
+.image-output-section #liveQueue{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px}
+.image-output-section .queue-job{margin:0}.image-output-section .queue-job-head small{max-width:100%}
+.image-output-section #imageHistoryGrid{grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr))}
+.image-output-section #imageHistoryGrid>.empty-state{grid-column:1/-1}
+.ui-mode-help{margin:12px 0 0;font-size:12px;line-height:1.55;color:var(--muted);max-width:650px}
+#imageStartPanel .start-block:has(#imageComplexityToggle){flex:1 1 280px;min-width:0}
+body.image-advanced-mode .simple-only{display:none!important}
+body.image-simple-mode #workflowPresetSuite .lab-tabs{display:none!important}
+#recipeOptions>.simple-only{margin-bottom:0}
+.image-tools-panel,.video-frame-panel{border:1px solid var(--line);border-radius:14px;padding:0 16px;background:var(--panel)}
+.image-tools-panel>summary,.video-frame-panel>summary{padding:16px 0!important}
+.image-tools-panel .controls-card{border:0;background:transparent;padding:0!important;max-width:none}
+.image-tools-content{width:100%;min-width:0;max-width:1050px;margin:auto}
+#appUpdatesPanel{margin-top:24px;max-width:1000px}
+#appUpdatesPanel .check-row{display:flex;align-items:flex-start;gap:10px;line-height:1.6;font-size:14px;flex-direction:row}
+#appUpdatesPanel input[type=checkbox]{margin-top:3px;flex-shrink:0}
+#appUpdateExpectedHash{font:12px/1.5 ui-monospace,monospace;min-height:44px}
+#appUpdateCurrent{overflow-wrap:anywhere}
+#appUpdateReview{border-top:1px solid var(--line);margin-top:18px;padding-top:6px}
+.update-log{background:#0b1117;padding:12px;border-radius:10px;max-height:360px;overflow:auto;white-space:pre-wrap;word-break:break-word;font:12px/1.5 ui-monospace,monospace}
+.app-update-banner{position:fixed;z-index:120;top:0;left:0;right:0;background:#2c4038;color:#e6f7ef;padding:12px max(16px,env(safe-area-inset-left,0px));font-size:13px;text-align:center;box-shadow:0 3px 14px #0006}
+@media(min-width:1101px){
+ #view-image>.image-layout-toolbar{display:flex;justify-content:flex-end;margin:-8px 0 12px}
+ #imageLayoutSwapBtn{min-height:34px;padding:6px 10px;font-size:12px;background:transparent}
+ #imageCreatorLayout{display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:start;gap:20px}
+ #imageCreatorLayout>.preview-column{grid-column:1;grid-row:1;min-width:0;order:0}
+ #imageCreatorLayout>.controls-card{grid-column:2;grid-row:1;min-width:0;order:0}
+ #imageCreatorLayout.image-preview-right{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
+ #imageCreatorLayout.image-preview-right>.preview-column{grid-column:2}
+ #imageCreatorLayout.image-preview-right>.controls-card{grid-column:1}
+ #imageCreatorLayout .preview-card{width:100%}
+ #imageCreatorLayout .dropzone{height:auto;min-height:360px;aspect-ratio:1/1}
+ #imageCreatorLayout .dropzone img{max-height:75vh;width:100%;height:100%;object-fit:contain}
+}
+@media(max-width:1100px) and (min-width:901px){#imageCreatorLayout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:900px){
+ .image-output-section{margin-top:18px;gap:14px}
+ .image-output-section>.live-queue-panel,.image-output-section>.studio-history-panel{padding:14px}
+ .image-output-section #imageHistoryGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .image-tools-panel,.video-frame-panel{padding-inline:14px}
+ .image-tools-panel>summary small,.video-frame-panel>summary small{display:block!important;line-height:1.5}
+}
+
+@media(min-width:901px){.sidebar{overflow-y:auto;min-height:0}}
+
+/* History cards keep all actions inside their available width. */
+#imageOutputs .asset-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#imageOutputs .asset-actions>button,#imageOutputs .asset-actions>a{min-width:0;width:100%;min-height:36px;margin:0;padding:7px 5px;font-size:11px;white-space:normal;overflow-wrap:anywhere;display:flex;justify-content:center;align-items:center;line-height:1.35}
+@media(max-width:900px){#imageOutputs .asset-actions>button,#imageOutputs .asset-actions>a{min-height:44px}}
+
+/* 0.1.0.30 — desktop history/library cards: keep every action inside the card. */
+@media(min-width:901px){
+ #imageHistoryGrid,#libraryGrid{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))!important;align-items:start}
+ #imageHistoryGrid .asset-card,#libraryGrid .asset-card{min-width:0;height:auto;overflow:hidden;display:flex;flex-direction:column}
+ #imageHistoryGrid .asset-info,#libraryGrid .asset-info{min-width:0;overflow:visible;flex:1 1 auto}
+ #imageHistoryGrid .asset-actions,#libraryGrid .asset-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px;width:100%;min-width:0}
+ #imageHistoryGrid .asset-actions>button,#imageHistoryGrid .asset-actions>a,
+ #libraryGrid .asset-actions>button,#libraryGrid .asset-actions>a{box-sizing:border-box;min-width:0;width:100%;max-width:100%;min-height:38px;margin:0;padding:7px 6px;display:flex;align-items:center;justify-content:center;white-space:normal;overflow-wrap:anywhere;word-break:normal;line-height:1.25;font-size:11px}
+}
+
+/* 0.1.0.32 — desktop language picker belongs with runtime actions, not branding. */
+.topbar .brand{flex-wrap:nowrap!important}.topbar .top-actions{display:flex;align-items:center;gap:8px}.topbar .top-language-picker{margin-inline-start:0;flex:0 0 auto}.topbar .top-language-picker span{display:none}.topbar .top-language-picker select{width:auto;min-width:108px;max-width:145px}
+.mobile-language-picker{display:none}
+@media(max-width:900px){.topbar .top-language-picker{display:none!important}.mobile-language-picker{display:flex!important;margin:0 0 10px 0!important;width:100%;justify-content:space-between}.mobile-language-picker span{display:block!important}.mobile-language-picker select{max-width:none!important;width:58%;min-height:44px}.brand:has(.language-picker){flex-wrap:nowrap!important}}

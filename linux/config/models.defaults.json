@@ -1,0 +1,41 @@
+{
+  "models": [
+    {
+      "id": "qwen_image_21",
+      "name": "Qwen Image 2.1",
+      "group": "Native · Unified Generate / Edit",
+      "kind": "image",
+      "provider": "qwen_image21",
+      "enabled": true,
+      "status": "configure",
+      "capabilities": [
+        "generate",
+        "edit",
+        "reference",
+        "multi_image",
+        "inpaint"
+      ],
+      "config": {
+        "runtime": "native_worker",
+        "model_dir": "",
+        "model_path": "",
+        "device": "cuda",
+        "dtype": "bfloat16",
+        "cpu_offload": true,
+        "default_steps": 40,
+        "default_cfg": 1.0,
+        "memory_mode": "balanced",
+        "gpu_memory": "21GiB",
+        "cpu_memory": "44GiB",
+        "input_media": {
+          "image": true,
+          "video": false,
+          "max_images": 10,
+          "max_videos": 0
+        },
+        "auto_priority": 100,
+        "vae_decode_mode": "auto"
+      }
+    }
+  ]
+}

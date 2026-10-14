@@ -1,0 +1,79 @@
+/* 0.1.0.27: choose -> apply -> save, with progressive disclosure for experts. */
+[hidden]{display:none!important}
+.brand-copy{min-width:0}.brand-copy b{overflow-wrap:anywhere;line-height:1.25}
+.brand-home-link{flex-shrink:0}.brand-home-link:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.preset-center,.image-auto-test{border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.preset-center>summary,.image-auto-test>summary{padding:14px!important}
+.preset-center>summary small,.image-auto-test>summary small{display:block!important;line-height:1.5;white-space:normal}
+.lab-body{padding:16px!important;display:block!important;min-width:0}
+.lab-body>section{padding-top:14px;min-width:0}.lab-body label{line-height:1.4}
+.lab-body label:not(.check-row):not(.upload-btn){display:grid;gap:6px;margin:14px 0 6px}
+.lab-body input:not([type=checkbox]),.lab-body select,.lab-body textarea{font-size:16px;width:100%;max-width:100%;min-width:0}
+.lab-body select,.lab-body input:not([type=checkbox]){min-height:44px}
+.lab-active{border-inline-start:3px solid var(--accent);padding:8px 12px;margin:0 0 14px;font-size:13px;line-height:1.5;color:var(--text);overflow-wrap:anywhere}
+.lab-tabs{display:flex;gap:4px;padding:4px;border:1px solid var(--line);background:#101719;border-radius:12px;max-width:100%}
+.lab-tabs button{display:flex;align-items:center;justify-content:center;min-width:0;min-height:44px;flex:1;padding:8px 6px;border:0;border-radius:9px;background:transparent;color:var(--muted);font-size:14px;line-height:1.3;white-space:normal}
+.lab-tabs button.active{background:#29463c;color:#ddf6eb}
+.lab-note{font-size:13px!important;line-height:1.6;color:var(--muted);margin:12px 0;overflow-wrap:anywhere}
+.lab-info{display:grid;gap:8px;padding:12px;margin:12px 0;background:#111a1c;border:1px solid var(--line);border-radius:10px;white-space:pre-line;font-size:13px;line-height:1.55;overflow-wrap:anywhere;min-width:0}
+.lab-info p{margin:0}.lab-info b{color:var(--text)}
+.lab-actions{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin:14px 0}
+.lab-actions>button,.lab-actions>.upload-btn{flex:1 1 150px;min-height:44px;margin:0!important}
+.lab-inner{padding:0!important;border-block:1px solid var(--line);margin:16px 0}
+.lab-inner>summary{padding:14px 0!important;cursor:pointer;min-height:46px;line-height:1.45;font-size:13px;color:var(--text)}
+.lab-inner[open]{padding-bottom:12px!important}
+#presetSaveIncludes{display:grid;gap:8px;padding:8px 0}
+#presetSaveIncludes>.check-row{display:flex;align-items:center;gap:10px;margin:0;padding:6px 0;min-height:40px;font-size:13px}
+#recipeFields .check-row{display:flex;align-items:center;gap:10px;flex-direction:row}
+#recipeOptions h4{margin:14px 0 0}
+#presetBindings .section-head h3{font-size:15px}#presetBindings .eyebrow{display:none}
+#legacyPresetControls{display:none!important}
+.lab-seed-option{display:flex!important;align-items:center;flex-direction:row!important;gap:10px!important;padding:10px 0;margin:8px 0!important;min-height:44px}
+.lab-range-row{padding:12px;margin:10px 0;border:1px solid var(--line);background:#121a1c;border-radius:12px;min-width:0}
+.lab-range-row>.lab-range-title{display:flex;align-items:center;flex-direction:row;gap:10px;margin:0 0 10px;min-height:32px}
+.lab-range-title input{width:18px;min-height:18px}.lab-range-title:has(input:disabled){opacity:.6}
+.lab-range-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.lab-range-fields label{font-size:12px!important;margin:0!important;min-width:0}
+.lab-range-fields input{padding:9px 6px;font-variant-numeric:tabular-nums}
+.lab-range-fields input:disabled{opacity:.5}
+.lab-values{display:block;color:var(--muted);font-size:12px;line-height:1.5;margin-top:10px;overflow-wrap:anywhere}
+.lab-total{display:flex;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);padding-top:14px;margin-top:16px}
+.lab-total>span{font-weight:700;font-size:16px;flex:1;white-space:nowrap}.lab-total>button{flex:1 1 180px}
+.lab-preview-total{font-weight:700;font-size:18px;color:#bce8d8;line-height:1.5}
+.lab-table-wrap{max-height:40dvh;overflow:auto;border:1px solid var(--line);border-radius:10px}
+.lab-test-table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;text-align:start}
+.lab-test-table th{position:sticky;top:0;background:#182528;z-index:1}.lab-test-table td,.lab-test-table th{padding:10px;border-bottom:1px solid var(--line);white-space:nowrap}
+#testPreviewPrompt{white-space:pre-wrap;word-break:break-word;font-size:12px;max-height:200px;overflow:auto}
+.lab-preview-card .lab-actions{margin-bottom:0}.lab-preview-card button:disabled{opacity:.6}
+#view-guide{max-width:1000px}.guide-search-label{display:grid;gap:7px;color:var(--muted);font-size:13px}
+.guide-search-label input{font-size:16px;min-height:44px}
+.guide27-topic{padding:0 16px;border:1px solid var(--line);border-radius:12px;margin:12px 0;background:var(--panel)}
+.guide27-topic>summary{min-height:52px;cursor:pointer;padding:14px 0;list-style:none;display:flex;align-items:center;gap:12px}
+.guide27-topic>summary::after{content:'+';margin-inline-start:auto;color:var(--muted)}.guide27-topic[open]>summary::after{content:'−'}
+.guide27-topic>summary::-webkit-details-marker{display:none}
+.guide27-topic .guide27-body{font-size:14px;line-height:1.7;color:var(--muted);padding-bottom:16px}
+.guide27-body h4{margin:18px 0 6px;color:var(--text)}.guide27-body p{margin:10px 0}.guide27-body code{overflow-wrap:anywhere;word-break:break-word;color:var(--text)}
+.guide27-body ol,.guide27-body ul{padding-inline-start:22px;display:grid;gap:7px}.guide27-body strong{color:var(--text)}
+@media(max-width:900px){
+ .topbar .brand{min-width:0!important;width:100%;gap:9px;align-items:center}
+ .topbar .brand-copy{flex:1 1 140px;min-width:0!important}
+ .topbar .brand-copy b{font-size:12px!important;white-space:normal!important}
+ .topbar .brand-copy small{font-size:10px;white-space:normal}
+ .topbar .language-picker{flex:0 0 110px;margin-left:auto!important;width:110px;min-width:0!important}
+ .topbar .language-picker select{font-size:16px;min-height:40px;width:100%;padding:7px}
+ .topbar .brand-logo-link{width:38px;height:38px;flex:0 0 38px}
+ .lab-body{padding:12px!important}.lab-tabs button{font-size:13px}
+ .lab-test-table td,.lab-test-table th{padding:9px 6px;font-size:12px}
+ .lab-preview-card{padding:16px 12px!important}.lab-preview-card .section-head{align-items:start}
+ .guide27-topic{padding-inline:12px}.guide27-body{font-size:14px}
+}
+@media(max-width:359px){.topbar .brand-copy b{font-size:11px!important}.topbar .language-picker{flex-basis:96px;width:96px}.lab-range-row{padding:10px}.lab-range-fields{gap:6px}}
+
+.job-test-label{font-size:12px;line-height:1.6;color:#c2dbd2;padding-block:8px;overflow-wrap:anywhere}
+
+/* 1.0.72: LoRA as a first-class benchmark component */
+.qs-lora-list{display:grid;gap:8px;max-height:360px;overflow-y:auto}
+.qs-lora-row{display:grid;grid-template-columns:auto minmax(0,1fr) 92px;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--line,#3d4855);border-radius:8px;min-width:0}
+.qs-lora-row>span{overflow-wrap:anywhere;min-width:0;font-size:.9rem}
+.qs-lora-row input[type=number]{width:100%;min-width:0}
+@media(max-width:560px){.qs-lora-row{grid-template-columns:auto minmax(0,1fr) 78px;gap:7px}}

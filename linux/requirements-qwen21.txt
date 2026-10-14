@@ -1,0 +1,17 @@
+# Qwen Image 2.1 AI dependencies; install manually in your own venv.
+# Install a compatible Torch/torchvision CUDA wheel first, by hand; see docs/MANUAL_SETUP.md.
+-r requirements-common.txt
+torch==2.14.0
+torchvision==0.29.0
+numpy==2.2.6
+transformers==5.17.0
+huggingface-hub>=1.0,<2
+accelerate==1.15.0
+peft==0.18.0
+safetensors>=0.6,<1
+tokenizers>=0.23,<0.24
+gguf>=0.16,<1
+# Direct runtime requirements declared by the pinned Diffusers source revision.
+importlib-metadata==8.7.0
+filelock>=3.16,<4
+regex!=2019.12.17

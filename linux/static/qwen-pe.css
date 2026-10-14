@@ -1,0 +1,14 @@
+/* Optional prompt rewrite workspace. Scoped to PE; no global layout changes. */
+.pe-panel>summary{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.pe-body{display:flex;flex-direction:column;gap:14px}.pe-body>p{margin:0}
+.pe-path{display:block;overflow-wrap:anywhere;word-break:break-word;font-size:.78rem;color:var(--muted,#9eafc4)}
+.pe-path:empty{display:none}.pe-settings label,.pe-result label{display:flex;flex-direction:column;gap:7px}
+.pe-settings .check-row{flex-direction:row;align-items:flex-start}.pe-settings input[type=checkbox]{flex:none;margin-top:4px}
+.pe-settings .hub-details-body{display:flex;flex-direction:column;gap:14px}
+.pe-panel pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:230px;overflow:auto;font-size:.78rem}
+.pe-result{border:1px solid var(--border,#34465b);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.pe-panel [hidden]{display:none!important}.pe-original{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.86rem;max-height:180px;overflow:auto}
+.pe-run-actions .primary{flex:1}.pe-panel textarea{min-height:130px;resize:vertical;width:100%}.pe-result textarea{min-height:190px}
+#peRuntimes>div{padding:8px 0;display:flex;flex-direction:column;gap:6px}#peRuntimes code{overflow-wrap:anywhere;font-size:.78rem}
+#peStatus{overflow-wrap:anywhere}#peResultInfo{white-space:pre-line}#peHistory{max-width:100%;margin-bottom:10px}
+@media(max-width:620px){.pe-panel .control-grid{grid-template-columns:1fr}.pe-panel .inline-actions{flex-wrap:wrap}.pe-result{padding:10px}.pe-panel button{white-space:normal;min-height:42px}}

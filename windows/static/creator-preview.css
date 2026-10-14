@@ -1,0 +1,28 @@
+/* Creator preview only. Shared by Windows and Linux, no inference changes. */
+.qwen21-edition #view-image > .section-head{max-width:1100px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0}
+.qwen21-edition #imageLayoutSwapBtn{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:38px;padding:8px 12px;font-size:12px;white-space:nowrap}
+.qwen21-edition #imagePreviewColumn{min-width:0;max-width:100%;width:100%}
+.qwen21-edition #imagePreviewColumn > .preview-card{min-width:0;max-width:100%;width:100%;padding:14px!important;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.qwen21-edition #imagePreviewColumn .section-head{margin:0 0 10px;min-height:32px;gap:8px;flex-wrap:wrap}
+.qwen21-edition #imagePreviewColumn .section-head b{font-size:13px}
+.qwen21-edition #imagePreviewColumn #mainPreview{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;width:100%;height:clamp(310px,59dvh,620px)!important;min-height:0!important;max-height:620px!important;aspect-ratio:auto!important;overflow:hidden;border:1px solid var(--line);border-radius:11px;background:#0a1018;padding:10px!important;flex:0 0 auto!important}
+.qwen21-edition #imagePreviewColumn #mainPreview > img.main-image{display:block;position:static!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center center!important;transform:none!important;min-width:0!important;min-height:0!important;border:0!important;background:transparent!important;cursor:zoom-in}
+.qwen21-edition #imagePreviewColumn #mainPreview > img[hidden]{display:none!important}
+.qwen21-edition #mainPreviewEmpty{font-size:13px;line-height:1.6;color:var(--muted);text-align:center;max-width:260px;padding:18px}
+.qwen21-edition #imagePreviewCaption{font-size:11px;line-height:1.5;min-height:18px;color:var(--muted);margin:9px 2px 0;overflow-wrap:anywhere}
+@media(min-width:1024px){
+ .qwen21-edition #imageCreatorLayout{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)!important;align-items:start!important;gap:20px;max-width:1100px;margin-inline:auto;min-width:0}
+ .qwen21-edition #imageCreatorLayout > #imageControlsColumn{grid-column:1!important;grid-row:1!important;min-width:0;max-width:100%}
+ .qwen21-edition #imageCreatorLayout > #imagePreviewColumn{grid-column:2!important;grid-row:1!important;min-width:0;max-width:100%;height:auto!important;order:initial!important}
+ .qwen21-edition #imageCreatorLayout > #imagePreviewColumn > .preview-card{height:auto!important;flex:none!important}
+ .qwen21-edition #imageCreatorLayout.image-preview-left{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)!important}
+ .qwen21-edition #imageCreatorLayout.image-preview-left > #imagePreviewColumn{grid-column:1!important}
+ .qwen21-edition #imageCreatorLayout.image-preview-left > #imageControlsColumn{grid-column:2!important}
+}
+@media(max-width:1023px){
+ .qwen21-edition #imageLayoutSwapBtn{display:none!important}
+ .qwen21-edition #imageCreatorLayout{display:flex!important;flex-direction:column!important;gap:16px;min-width:0;width:100%;max-width:1100px;margin-inline:auto}
+ .qwen21-edition #imageCreatorLayout > #imageControlsColumn{order:0;max-width:100%;width:100%;min-width:0}
+ .qwen21-edition #imageCreatorLayout > #imagePreviewColumn{order:1;max-width:100%;width:100%;min-width:0;height:auto!important}
+ .qwen21-edition #imagePreviewColumn #mainPreview{height:clamp(240px,48dvh,480px)!important;max-height:480px!important}
+}

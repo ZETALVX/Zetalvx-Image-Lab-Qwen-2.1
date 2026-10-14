@@ -1,0 +1,125 @@
+/* 0.1.0.18 · finishing pass only, no new navigation or page hierarchy. */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.view,.controls-card,.hub-surface,.hub-row-title{min-width:0;max-width:100%;box-sizing:border-box}
+
+
+
+
+
+
+.hub-tabs{align-items:stretch;gap:6px}
+.hub-tabs button{border-radius:10px;min-height:44px;padding:10px 12px;line-height:1.3;flex:1 1 0;min-width:0;height:auto}
+.hub-inline,.path-row{min-width:0}
+.hub-inline>button,.hub-inline>a,.path-row button{white-space:normal;overflow-wrap:anywhere;min-width:0;border-radius:10px}
+.hub-path{overflow-wrap:anywhere;word-break:break-word;white-space:pre-wrap;max-width:100%;display:block}
+.local-library{margin:18px 0 0;padding-top:12px;border-top:1px solid var(--line)}
+.local-library-head{display:flex;align-items:baseline;gap:12px;justify-content:space-between;margin-bottom:10px}
+.local-library-head h4,.local-library-head h3{margin:0;font-size:18px}
+.local-library-actions{gap:8px;margin:0 0 12px}
+.local-library-actions button{min-height:40px;padding:8px 10px;font-size:13px}
+.local-search-label{display:block!important;margin:10px 0!important}.local-search-label input{width:100%;min-width:0;max-width:100%}
+.local-model-list{display:flex;flex-direction:column;min-width:0;gap:0}
+.local-model-row{padding:14px 0;border-bottom:1px solid var(--line);min-width:0;max-width:100%}
+.local-model-main{display:flex;gap:12px;align-items:start;min-width:0;justify-content:space-between}
+.local-model-name{min-width:0;flex:1}.local-model-name b{display:block;font-size:14px;overflow-wrap:anywhere;word-break:break-word}.local-model-name small{display:block;font-size:11px;margin-top:4px}
+.local-model-row .status-pill{flex:0 0 auto;align-self:start;white-space:normal;font-size:11px}
+.local-row-actions{margin:8px 0 0}.local-row-actions button{padding:7px 12px;font-size:12px;min-height:36px}
+.local-path-details{font-size:12px;margin-top:8px;max-width:100%;min-width:0;padding:0;border:0}
+.local-path-details>summary{cursor:pointer;color:var(--muted);padding:4px 0}.local-path-details code{margin:6px 0}
+.local-source-row{padding:12px 0;border-bottom:1px solid var(--line);min-width:0}.local-source-row code{font-size:12px}
+.local-pager{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:10px;font-size:12px}
+#localModelModal .modal-card{width:min(600px,94vw);min-width:0;max-height:88dvh;overflow:auto}
+#localModelModal input{min-width:0;max-width:100%}
+#localModelError{overflow-wrap:anywhere;color:var(--danger,#e4aaaa)}
+
+
+
+
+@media(max-width:900px){
+ .hub-title{align-items:center}.hub-title h2{font-size:26px}.hub-title p{font-size:14px;line-height:1.45}
+ .hub-tabs button{padding:10px 5px;font-size:12px}
+ .hub-surface{padding:18px 16px}
+ .local-library-actions button{font-size:12px;min-height:42px;flex:1 1 auto}
+ .local-row-actions button{min-height:40px}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ input,textarea,select{max-width:100%}
+}
+@media(max-width:400px){.hub-tabs button{font-size:11px}.local-library-head{gap:8px}.local-library-actions{gap:4px}.local-model-main{gap:8px}.local-model-name b{font-size:13px}}
+
+
+
+
+
+
+/* 0.1.0.18: explicit file/folder model actions + project ordering */
+.local-standard-path{display:flex;align-items:center;gap:8px;margin:-4px 0 12px;color:var(--muted);font-size:11px;min-width:0}.local-standard-path code{overflow-wrap:anywhere;word-break:break-word;color:inherit}
+.project-actions{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap;flex:0 0 auto}
+.project-icon{width:36px;min-width:36px;height:36px;padding:0!important;display:grid;place-items:center;font-size:16px}
+.project-icon:disabled{opacity:.3;cursor:default}
+@media(max-width:600px){
+ .project-card{align-items:flex-start}.project-actions{max-width:92px;display:grid;grid-template-columns:36px 36px}.project-main{padding-top:6px}
+ .local-library-actions{display:grid!important;grid-template-columns:1fr 1fr}.local-library-actions button:last-child{grid-column:1/-1}
+}
+
+/* 0.1.0.18 — model add flow + clean selectors. Scoped to model UI only. */
+.compact-add-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0 4px}
+.local-add-main{min-height:44px;padding:10px 16px;border-radius:12px}
+.compact-path{margin:8px 0 14px;border:0;background:transparent;color:var(--muted)}
+.compact-path>summary{cursor:pointer;list-style:none;font-size:12px;color:var(--muted);padding:5px 0}
+.compact-path>summary::-webkit-details-marker{display:none}.compact-path>summary:before{content:"▸ ";color:#8fa39c}.compact-path[open]>summary:before{content:"▾ "}
+.compact-path code{display:block;margin:6px 0 0;font-size:11px;overflow-wrap:anywhere;color:#9db3ab}
+.model-add-modal{width:min(680px,96vw)!important}.model-add-intro{margin-top:-2px}
+.model-add-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:14px 0 18px}
+.model-add-methods button{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0;min-height:72px;padding:12px 13px;border:1px solid var(--line2);border-radius:12px;background:#141a1d;color:var(--text);text-align:left}
+.model-add-methods button b{font-size:13px}.model-add-methods button small{font-size:11px;color:var(--muted);line-height:1.35;overflow-wrap:anywhere}
+.model-add-methods button.active{background:#263d34;border-color:#6ca68e;box-shadow:inset 0 0 0 1px #6ca68e33}.model-add-methods button.active small{color:#bad8cc}
+.model-add-pane{padding:14px 0 2px;border-top:1px solid var(--line)}.model-add-pane label{margin-top:0}.model-add-pane progress{height:8px;margin-top:12px}
+#localModelUploadFile{padding:8px;background:#111719;border:1px solid var(--line2);border-radius:10px;color:var(--muted)}
+#localModelUploadFile::file-selector-button{border:1px solid #507763;border-radius:9px;background:#263d34;color:#d6f2e5;padding:9px 12px;margin-right:10px;font:inherit;font-weight:600;cursor:pointer}
+/* The LoRA chooser used to inherit the browser's bright native button appearance on iOS. */
+#loraModal .model-choice-search{margin:0 0 10px}
+#loraModal #loraList{gap:8px;padding:1px}
+#loraModal #loraList>button{appearance:none;-webkit-appearance:none;width:100%;min-height:52px;border:1px solid var(--line2);border-radius:12px;background:#12181b;color:var(--text);padding:12px 14px;text-align:left;font:inherit;font-weight:650;box-shadow:none;overflow-wrap:anywhere}
+#loraModal #loraList>button:hover,#loraModal #loraList>button:focus-visible{background:#22322d;border-color:#6ca68e;color:#d9f4e8}
+#loraModal #loraList>button:active{transform:translateY(1px)}
+.model-choice-modal{width:min(620px,94vw)!important}
+/* Keep local model lists compact: one action row, metadata below. */
+.local-library{padding-top:4px}.local-library-head{align-items:center}.local-library-actions{margin-bottom:4px}
+.local-model-row{padding:15px 0!important}.local-model-name small{margin-top:4px}.local-row-actions{margin-top:9px!important}
+@media(max-width:900px){
+ .model-add-methods{grid-template-columns:1fr 1fr;gap:7px}.model-add-methods button{min-height:68px;padding:10px}
+ .compact-add-row{justify-content:space-between}.compact-add-row .local-add-main{flex:1 1 auto}.compact-add-row .text-button{flex:0 0 auto}
+ #loraModal #loraList>button{min-height:50px;padding:11px 12px}
+}
+@media(max-width:420px){.model-add-methods{grid-template-columns:1fr}.model-add-methods button{min-height:58px}.model-add-methods button small{font-size:10px}}
+
+/* 0.1.0.18 — final visual polish: branding, file inputs, look bindings. */
+.brand-logo-link{width:38px;height:38px;flex:0 0 38px;border-radius:11px;overflow:hidden;background:#fff;border:1px solid rgba(255,255,255,.14);display:block;box-shadow:0 5px 16px rgba(0,0,0,.18)}
+.brand-logo-link img{width:100%;height:100%;display:block;object-fit:cover}
+.brand-copy{min-width:0}.brand-copy b{overflow-wrap:anywhere}
+.creator-login-brand .brand-logo-link{width:46px;height:46px;flex-basis:46px;border-radius:13px}
+
+
+
+.style-binding-polished{padding:16px;border:1px solid var(--line);border-radius:14px;background:#0f1518}
+.style-binding-grid{display:grid;grid-template-columns:minmax(180px,.8fr) minmax(0,1.2fr);gap:14px;align-items:end}
+.style-binding-polished label{margin:0}.style-binding-action{min-width:0}.style-binding-action .mini-label{display:block;margin-bottom:7px;color:var(--muted);font-size:12px}.style-binding-buttons{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}.style-binding-buttons button{min-height:46px;height:auto;white-space:normal;line-height:1.3;padding:10px 14px;border-radius:10px}.style-binding-help{margin-top:12px}
+.creator-footer{margin:34px 0 10px;padding:18px 4px 8px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--muted)}
+.creator-footer-brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;min-width:0}.creator-footer-brand>span:last-child{display:flex;flex-direction:column;min-width:0}.creator-footer-brand small{color:var(--muted);margin-top:2px}.creator-footer-logo{width:34px;height:34px;flex:0 0 34px;border-radius:10px;overflow:hidden;background:white;border:1px solid rgba(255,255,255,.14)}.creator-footer-logo img{width:100%;height:100%;object-fit:cover;display:block}.creator-footer nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}.creator-footer nav a{color:#9ed4c0;text-decoration:none}.creator-footer nav a:hover{text-decoration:underline}
+#localModelUploadFile[multiple]{min-height:50px}
+@media(max-width:700px){
+ .style-binding-grid{grid-template-columns:1fr}.style-binding-buttons{grid-template-columns:1fr auto}.style-binding-buttons button{min-height:48px}.style-binding-polished{padding:14px}
+ .creator-footer{align-items:flex-start;flex-direction:column;padding-bottom:92px}.creator-footer nav{justify-content:flex-start;gap:10px 16px}
+ .brand-logo-link{width:36px;height:36px;flex-basis:36px}.brand{gap:9px}.brand-copy b{font-size:12px}.brand-copy small{font-size:10px}
+}
+@media(max-width:420px){.style-binding-buttons{grid-template-columns:1fr}.style-binding-buttons .danger{justify-self:start;min-width:100px}.creator-footer nav{flex-direction:column}}
+
+/* 0.1.0.27: official transparent logo, all app surfaces. */
+.brand-logo-link,.creator-footer-logo{background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}
+.brand-logo-link img,.creator-footer-logo img{object-fit:contain!important;filter:none!important}

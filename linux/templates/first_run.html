@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- Modified for Zetalvx Image Lab Qwen 1.0.52: interface/localization only; Apache-2.0, retained NOTICE. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>First setup · Zetalvx Image Lab — Qwen 2.1 Edition</title>
+<link rel="icon" type="image/png" href="/static/zetalvx-logo.png?v=1.0.75">
+<link rel="stylesheet" href="/static/style.css?v=1.0.75">
+<script src="/static/qwen-catalog.js?v=1.0.75"></script><script src="/static/first-run-code.js?v=1.0.75"></script><script src="/static/i18n.js?v=1.0.75"></script><link rel="stylesheet" href="/static/studio-additions.css?v=1.0.75"><link rel="stylesheet" href="/static/release-polish.css?v=1.0.75">
+</head>
+<body data-auth-title="First setup" class="creator-login-page creator-first-run-page">
+  <label class="auth-language"><span>Language</span><select data-language-picker aria-label="Language"></select></label><main class="creator-login-card creator-first-run-card">
+    <div class="creator-login-brand"><a class="brand-logo-link" href="/" aria-label="Home"><img src="/static/zetalvx-logo.png?v=1.0.75" alt="Zetalvx"></a><div><b data-no-i18n>ZETALVX IMAGE LAB</b><small data-no-i18n>Qwen 2.1 Edition · Zetalvx Labs</small></div></div>
+    <div class="creator-login-copy">
+      <span class="eyebrow">Welcome</span>
+      <h1>Create your local account</h1>
+      <p>Local account only. No external registration.</p>
+    </div>
+    {% if error %}<div class="creator-login-error">{{ error }}</div>{% endif %}
+    {% if setup_code_display %}
+    <div class="first-run-host-code" data-local-setup-code data-expires-in="{{ setup_code_expires_in|int }}">
+      <b>Setup code for another device</b>
+      <code data-no-i18n>{{ setup_code_display }}</code>
+      {% if setup_code_command == "imagelab-qwen setup-code" %}<small>Valid for 20 minutes. This local page refreshes the code automatically when it expires. imagelab-qwen setup-code can also rotate it manually.</small>{% else %}<small>Valid for 20 minutes. This local page refreshes the code automatically when it expires. SETUP-CODE.cmd can also rotate it manually.</small>{% endif %}
+    </div>
+    {% endif %}
+    <form method="post" class="creator-login-form" autocomplete="on">
+      <input type="hidden" name="first_run_csrf" value="{{ first_run_csrf }}">
+      {% if code_required %}
+      <div class="first-run-note" id="remote-setup-note">You are configuring from another device. Enter the code shown in the terminal of the computer running the app. It is valid for 20 minutes and can be used once.</div>
+      <label>Setup code<input name="setup_code" type="text" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" aria-describedby="remote-setup-note" maxlength="128" autofocus required></label>
+      <div class="first-run-note"><span>Code expired or terminal closed? On the host computer run</span> <code>bash setup-code.sh</code> <span>(Linux) or</span> <code>SETUP-CODE.cmd</code> <span>(Windows). Do not restart or reinstall the app.</span></div>
+      {% endif %}
+      <label>Username<input name="username" value="{{ username }}" autocomplete="username" {% if not code_required %}autofocus{% endif %} required maxlength="80"></label>
+      <label>Password<input name="password" type="password" autocomplete="new-password" minlength="10" required></label>
+      <label>Confirm password<input name="confirm_password" type="password" autocomplete="new-password" minlength="10" required></label>
+      <label>Web access
+        <select name="network">
+          <option value="local" {% if network != 'lan' %}selected{% endif %}>This PC only · recommended</option>
+          <option value="lan" {% if network == 'lan' %}selected{% endif %}>Local network (LAN) · other devices</option>
+        </select>
+      </label>
+      <div class="first-run-note">Your access choice is saved. If you change mode, it will apply on the next restart. When connecting remotely, keep LAN enabled to continue using other devices.</div>
+      <div class="first-run-note">After account setup, Models opens so you can configure your Qwen Image 2.1 repository and components.</div>
+      <button class="primary big" type="submit">Continue</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,830 @@
+{
+  "en": {
+    "title": "Licences, open source and your data",
+    "intro": "What you may do with the app, what to check before using a model, and where your files go. This guide describes Image Lab, not an additional licence.",
+    "back": "Back to Image Lab",
+    "language": "Language",
+    "summary": [
+      [
+        "App code",
+        "Apache-2.0"
+      ],
+      [
+        "Model weights",
+        "Separate terms"
+      ],
+      [
+        "Generation",
+        "On your configured host"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "Your rights to the application",
+        "body": "The application source is supplied under Apache License 2.0. You may use, study, modify and redistribute it, including for commercial purposes, subject to that licence. When distributing a copy or modified version, include the licence, retain the relevant copyright and NOTICE attributions, and identify your changes. Paying for a ready-to-install package or support does not remove these rights. The licence does not grant permission to claim endorsement or use project trademarks as your own."
+      },
+      {
+        "id": "2",
+        "title": "Before using Qwen or an optional component",
+        "body": "The ZIP contains no model weights. The model, transformer, VAE, text encoder, LoRA and quantized files you select retain the terms of their source. The published Qwen Image 2.1 licence is the Qwen Research License: its standard grant is limited to non-commercial research or evaluation; commercial use requires separate permission from the licensor. Texture-Fix is also labelled qwen-research. Read the licence of the exact revision you download. A compatible file or a successful test is not permission to use it."
+      },
+      {
+        "id": "3",
+        "title": "Images, professional work and paid packages",
+        "body": "Before using a model for client work, a paid service or other commercial activity, obtain the permissions required by its licence. A Patreon package, a Hugging Face/Civitai account, a token or a download confirmation does not provide a commercial model licence. Check your rights to uploaded photographs, logos and other material, as well as the rights of people depicted. Image Lab does not guarantee copyright ownership, exclusivity or clearance of a generated image. Review outputs before publishing them."
+      },
+      {
+        "id": "4",
+        "title": "Libraries and FFmpeg",
+        "body": "The installer prepares a private Python runtime and obtains its dependencies, including PyTorch, Diffusers, Transformers, Pillow, Flask and Cheroot. These projects retain their own licences and notices; the app licence does not replace them. Image/video tools call your installed ffmpeg and ffprobe executables; these binaries are not included in the ZIP. FFmpeg licensing depends on its build options and components. If you redistribute a complete installed runtime, include the applicable third-party terms and meet any source-code obligations of those components."
+      },
+      {
+        "id": "5",
+        "title": "Local processing and network connections",
+        "body": "Prompts and reference images are sent from your browser to the computer running Image Lab, where the configured local model performs generation. Using your phone over LAN therefore sends inputs to that host, not to an inference service run by Zetalvx. Internet access is used for installation, selected downloads, provider metadata/authentication and online dependency-security checks, which query package names and versions. Those requests are subject to the providers’ terms. Interface and guide translations are bundled; they do not use an online translation service."
+      },
+      {
+        "id": "6",
+        "title": "Accounts, tokens and sensitive information",
+        "body": "Your app account, provider tokens, projects, presets, generated images, retained latents and logs are stored on the host. Model profiles contain local paths and settings; they do not export provider tokens. Protect access to that computer and do not publish its secrets directory, account backups or unredacted logs. Removing a saved token from Image Lab does not revoke it at the provider: revoke or rotate it there when necessary. Only connect to a host and a network you trust."
+      },
+      {
+        "id": "7",
+        "title": "Backups, updates and removal",
+        "body": "Updates keep your existing projects, account, presets and models. Back up important data before maintenance. Uninstalling can preserve personal data or, after explicit confirmation, delete the installation folder and its contents. Linked model files outside that folder are not deleted. A copied backup or an exported preset remains wherever you saved it. Deleting a retained latent does not delete its PNG outputs. A security check or checksum verifies only its stated scope; it is not a guarantee of a safe model or an authentic publisher."
+      },
+      {
+        "id": "8",
+        "title": "Original texts, responsibility and support",
+        "body": "The original LICENSE and NOTICE files below apply to the app; the translated explanation on this page does not replace them. The application is provided “as is”, subject to the warranty and liability provisions of its licence and applicable law. Zetalvx Image Lab is an independent application, not an official Qwen, Hugging Face or Civitai product. Before sharing a diagnostic report through the project links, remove tokens, private prompts, images and personal paths. No report is sent by opening this page."
+      }
+    ],
+    "resources": [
+      "App licence · original text",
+      "App attribution notices · original text",
+      "Qwen Image 2.1 · licence source",
+      "Texture-Fix · source and terms",
+      "FFmpeg · licence information"
+    ]
+  },
+  "it": {
+    "title": "Licenze, open source e i tuoi dati",
+    "intro": "Cosa puoi fare con l’app, cosa verificare prima di usare un modello e dove finiscono i tuoi file. Questa guida descrive Image Lab: non aggiunge una nuova licenza.",
+    "back": "Torna a Image Lab",
+    "language": "Lingua",
+    "summary": [
+      [
+        "Codice dell’app",
+        "Apache-2.0"
+      ],
+      [
+        "Pesi dei modelli",
+        "Termini separati"
+      ],
+      [
+        "Generazione",
+        "Sul computer configurato"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "I tuoi diritti sull’applicazione",
+        "body": "Il codice sorgente dell’app è fornito con Apache License 2.0. Puoi usarlo, studiarlo, modificarlo e ridistribuirlo, anche per finalità commerciali, rispettando la licenza. Se distribuisci una copia o una versione modificata, includi la licenza, conserva i copyright e le attribuzioni NOTICE pertinenti e indica le modifiche. Pagare un pacchetto pronto da installare o l’assistenza non limita questi diritti. La licenza non permette di dichiarare approvazioni inesistenti né di appropriarsi dei marchi del progetto."
+      },
+      {
+        "id": "2",
+        "title": "Prima di usare Qwen o un componente opzionale",
+        "body": "La ZIP non contiene pesi di modelli. Modello, transformer, VAE, text encoder, LoRA e file quantizzati mantengono i termini della loro fonte. La licenza pubblicata per Qwen Image 2.1 è la Qwen Research License: l’autorizzazione ordinaria è limitata alla ricerca o valutazione non commerciale; l’uso commerciale richiede un’autorizzazione separata del titolare. Anche Texture-Fix è indicato come qwen-research. Leggi la licenza della revisione esatta che scarichi. Un file compatibile o un test riuscito non costituiscono un’autorizzazione all’uso."
+      },
+      {
+        "id": "3",
+        "title": "Immagini, lavoro professionale e pacchetti a pagamento",
+        "body": "Prima di usare un modello per clienti, servizi a pagamento o altre attività commerciali, ottieni le autorizzazioni previste dalla sua licenza. Un pacchetto Patreon, un account Hugging Face/Civitai, un token o la conferma di download non forniscono una licenza commerciale del modello. Verifica i diritti sulle fotografie, sui loghi e sugli altri materiali caricati, e i diritti delle persone rappresentate. Image Lab non garantisce titolarità del copyright, esclusività o assenza di diritti altrui sulle immagini generate. Controlla i risultati prima di pubblicarli."
+      },
+      {
+        "id": "4",
+        "title": "Librerie e FFmpeg",
+        "body": "L’installer prepara un ambiente Python privato e scarica le dipendenze, tra cui PyTorch, Diffusers, Transformers, Pillow, Flask e Cheroot. Questi progetti conservano licenze e attribuzioni proprie, non sostituite dalla licenza dell’app. Gli strumenti immagine/video richiamano gli eseguibili ffmpeg e ffprobe installati sul tuo computer: non sono inclusi nella ZIP. La licenza di FFmpeg dipende dalla compilazione e dai componenti abilitati. Se ridistribuisci un ambiente installato completo, includi i termini applicabili e rispetta gli eventuali obblighi relativi ai sorgenti dei componenti."
+      },
+      {
+        "id": "5",
+        "title": "Elaborazione locale e connessioni di rete",
+        "body": "Prompt e immagini di riferimento passano dal browser al computer che esegue Image Lab, dove il modello locale configurato genera i risultati. Usando il telefono in LAN invii quindi gli input a quel computer, non a un servizio di generazione gestito da Zetalvx. Internet è usato per installazione, download scelti, metadati/autenticazione dei fornitori e verifiche online di sicurezza delle dipendenze, che interrogano nomi e versioni dei pacchetti. Queste richieste sono soggette ai termini dei fornitori. Le traduzioni dell’interfaccia e della guida sono incluse: non usano servizi di traduzione online."
+      },
+      {
+        "id": "6",
+        "title": "Account, token e informazioni riservate",
+        "body": "Account dell’app, token dei fornitori, progetti, preset, immagini generate, latenti conservati e log sono salvati sul computer che esegue l’app. I profili modello contengono percorsi locali e impostazioni, ma non esportano i token dei fornitori. Proteggi l’accesso al computer e non pubblicare cartelle di segreti, backup degli account o log non ripuliti. Rimuovere un token salvato da Image Lab non lo revoca presso il fornitore: revocalo o rigeneralo sul relativo servizio quando serve. Collegati soltanto a computer e reti di cui ti fidi."
+      },
+      {
+        "id": "7",
+        "title": "Backup, aggiornamenti e rimozione",
+        "body": "Gli aggiornamenti conservano progetti, account, preset e modelli esistenti. Prima della manutenzione crea un backup dei dati importanti. La disinstallazione può conservare i dati personali oppure, dopo una conferma esplicita, eliminare la cartella dell’installazione e il suo contenuto. I modelli collegati che si trovano fuori da quella cartella non vengono eliminati. Backup copiati e preset esportati rimangono dove li hai salvati. Eliminare un latente conservato non elimina i suoi PNG. Un controllo di sicurezza o checksum verifica soltanto ciò che dichiara: non garantisce un modello sicuro né l’autenticità del produttore."
+      },
+      {
+        "id": "8",
+        "title": "Testi originali, responsabilità e assistenza",
+        "body": "I file originali LICENSE e NOTICE qui sotto si applicano all’app; la spiegazione tradotta in questa pagina non li sostituisce. L’applicazione è fornita “così com’è”, con le disposizioni della licenza su garanzie e responsabilità e nel rispetto della legge applicabile. Zetalvx Image Lab è un’app indipendente, non un prodotto ufficiale Qwen, Hugging Face o Civitai. Prima di condividere una diagnostica tramite i collegamenti del progetto, rimuovi token, prompt privati, immagini e percorsi personali. Aprire questa pagina non invia alcun rapporto."
+      }
+    ],
+    "resources": [
+      "Licenza dell’app · testo originale",
+      "Attribuzioni dell’app · testo originale",
+      "Qwen Image 2.1 · fonte della licenza",
+      "Texture-Fix · fonte e condizioni",
+      "FFmpeg · informazioni sulla licenza"
+    ]
+  },
+  "es": {
+    "title": "Licencias, código abierto y tus datos",
+    "intro": "Qué puedes hacer con la aplicación, qué revisar antes de usar un modelo y dónde se guardan tus archivos. Esta guía describe Image Lab; no añade una licencia.",
+    "back": "Volver a Image Lab",
+    "language": "Idioma",
+    "summary": [
+      [
+        "Código de la aplicación",
+        "Apache-2.0"
+      ],
+      [
+        "Pesos de los modelos",
+        "Condiciones independientes"
+      ],
+      [
+        "Generación",
+        "En el equipo configurado"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "Tus derechos sobre la aplicación",
+        "body": "El código fuente se proporciona bajo Apache License 2.0. Puedes usarlo, estudiarlo, modificarlo y redistribuirlo, incluso con fines comerciales, respetando esa licencia. Si distribuyes una copia o una versión modificada, incluye la licencia, conserva los avisos de copyright y las atribuciones NOTICE pertinentes e identifica tus cambios. Pagar por un paquete listo para instalar o por asistencia no limita estos derechos. La licencia no permite atribuirte las marcas del proyecto ni afirmar un respaldo inexistente."
+      },
+      {
+        "id": "2",
+        "title": "Antes de usar Qwen o un componente opcional",
+        "body": "El ZIP no contiene pesos de modelos. El modelo, transformer, VAE, codificador de texto, LoRA y archivos cuantizados conservan las condiciones de su fuente. Qwen Image 2.1 publica la Qwen Research License: su autorización ordinaria se limita a investigación o evaluación no comercial; el uso comercial requiere un permiso separado del titular. Texture-Fix también indica qwen-research. Lee la licencia de la revisión exacta que descargues. La compatibilidad de un archivo o una prueba satisfactoria no conceden permiso de uso."
+      },
+      {
+        "id": "3",
+        "title": "Imágenes, trabajo profesional y paquetes de pago",
+        "body": "Antes de usar un modelo para clientes, servicios de pago u otras actividades comerciales, obtén los permisos que exige su licencia. Un paquete de Patreon, una cuenta de Hugging Face/Civitai, un token o una confirmación de descarga no proporcionan una licencia comercial del modelo. Revisa tus derechos sobre fotografías, logotipos y otros materiales cargados, y los derechos de las personas representadas. Image Lab no garantiza la titularidad del copyright, la exclusividad ni la ausencia de derechos ajenos sobre las imágenes generadas. Revísalas antes de publicarlas."
+      },
+      {
+        "id": "4",
+        "title": "Bibliotecas y FFmpeg",
+        "body": "El instalador prepara un entorno Python privado y descarga dependencias como PyTorch, Diffusers, Transformers, Pillow, Flask y Cheroot. Estos proyectos mantienen sus propias licencias y avisos; la licencia de la aplicación no los sustituye. Las herramientas de imagen y vídeo usan los ejecutables ffmpeg y ffprobe instalados en tu equipo, no incluidos en el ZIP. La licencia de FFmpeg depende de su compilación y componentes. Si redistribuyes un entorno instalado completo, incluye las condiciones aplicables y cumple las obligaciones de entrega del código fuente que correspondan."
+      },
+      {
+        "id": "5",
+        "title": "Procesamiento local y conexiones de red",
+        "body": "Los prompts y las imágenes de referencia pasan del navegador al equipo que ejecuta Image Lab, donde genera el modelo local configurado. Usar el teléfono por LAN envía las entradas a ese equipo, no a un servicio de generación de Zetalvx. Internet se usa para la instalación, las descargas elegidas, los metadatos y la autenticación de proveedores, y las comprobaciones de seguridad de dependencias, que consultan nombres y versiones de paquetes. Se aplican las condiciones de esos proveedores. Las traducciones de la interfaz y la guía están incluidas; no usan un servicio de traducción en línea."
+      },
+      {
+        "id": "6",
+        "title": "Cuentas, tokens e información sensible",
+        "body": "La cuenta de la aplicación, los tokens, proyectos, presets, imágenes generadas, latentes conservados y registros se guardan en el equipo anfitrión. Los perfiles de modelo contienen rutas locales y ajustes, pero no exportan los tokens de proveedores. Protege el acceso a ese equipo y no publiques directorios de secretos, copias de cuentas ni registros sin revisar. Borrar un token guardado en Image Lab no lo revoca en el proveedor: revócalo o renuévalo allí cuando sea necesario. Conéctate solo a equipos y redes de confianza."
+      },
+      {
+        "id": "7",
+        "title": "Copias de seguridad, actualizaciones y eliminación",
+        "body": "Las actualizaciones conservan proyectos, cuenta, presets y modelos existentes. Haz una copia de los datos importantes antes del mantenimiento. Al desinstalar puedes conservar los datos personales o, tras una confirmación explícita, eliminar la carpeta de instalación y su contenido. No se eliminan los modelos enlazados que están fuera de esa carpeta. Las copias y los presets exportados permanecen donde los guardaste. Borrar un latente no borra sus PNG. Una comprobación de seguridad o checksum solo verifica su alcance declarado; no garantiza un modelo seguro ni un editor auténtico."
+      },
+      {
+        "id": "8",
+        "title": "Textos originales, responsabilidad y ayuda",
+        "body": "Los archivos originales LICENSE y NOTICE enlazados abajo se aplican a la aplicación; esta explicación traducida no los sustituye. La aplicación se proporciona “tal cual”, según las disposiciones de garantía y responsabilidad de su licencia y la legislación aplicable. Zetalvx Image Lab es independiente, no un producto oficial de Qwen, Hugging Face o Civitai. Antes de compartir diagnósticos mediante los enlaces del proyecto, elimina tokens, prompts privados, imágenes y rutas personales. Abrir esta página no envía ningún informe."
+      }
+    ],
+    "resources": [
+      "Licencia de la aplicación · original",
+      "Atribuciones de la aplicación · original",
+      "Qwen Image 2.1 · fuente de la licencia",
+      "Texture-Fix · fuente y condiciones",
+      "FFmpeg · información de licencia"
+    ]
+  },
+  "fr": {
+    "title": "Licences, code ouvert et vos données",
+    "intro": "Ce que vous pouvez faire avec l’application, les vérifications à effectuer avant d’utiliser un modèle et l’emplacement de vos fichiers. Ce guide décrit Image Lab ; il ne constitue pas une licence supplémentaire.",
+    "back": "Retour à Image Lab",
+    "language": "Langue",
+    "summary": [
+      [
+        "Code de l’application",
+        "Apache-2.0"
+      ],
+      [
+        "Poids des modèles",
+        "Conditions distinctes"
+      ],
+      [
+        "Génération",
+        "Sur votre ordinateur hôte"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "Vos droits sur l’application",
+        "body": "Le code source est fourni sous Apache License 2.0. Vous pouvez l’utiliser, l’étudier, le modifier et le redistribuer, y compris à des fins commerciales, dans le respect de cette licence. Toute redistribution doit inclure la licence, conserver les avis de copyright et les attributions NOTICE applicables, et identifier les modifications. L’achat d’un paquet prêt à installer ou d’une assistance ne limite pas ces droits. La licence n’autorise ni l’appropriation des marques du projet ni la revendication d’un soutien inexistant."
+      },
+      {
+        "id": "2",
+        "title": "Avant d’utiliser Qwen ou un composant facultatif",
+        "body": "Le ZIP ne contient aucun poids de modèle. Le modèle, transformer, VAE, encodeur de texte, LoRA et fichiers quantifiés conservent les conditions de leur source. Qwen Image 2.1 publie la Qwen Research License : l’autorisation standard est limitée à la recherche ou à l’évaluation non commerciale ; un usage commercial nécessite une autorisation distincte du titulaire. Texture-Fix indique également qwen-research. Lisez la licence de la révision exacte téléchargée. La compatibilité d’un fichier ou la réussite d’un test ne vaut pas autorisation d’utilisation."
+      },
+      {
+        "id": "3",
+        "title": "Images, activité professionnelle et offres payantes",
+        "body": "Avant d’utiliser un modèle pour des clients, un service payant ou une autre activité commerciale, obtenez les autorisations exigées par sa licence. Un paquet Patreon, un compte Hugging Face/Civitai, un jeton ou une confirmation de téléchargement n’accorde pas de licence commerciale sur le modèle. Vérifiez vos droits sur les photos, logos et autres éléments importés, ainsi que ceux des personnes représentées. Image Lab ne garantit ni la propriété du droit d’auteur, ni l’exclusivité, ni l’absence de droits de tiers sur les images générées. Vérifiez-les avant publication."
+      },
+      {
+        "id": "4",
+        "title": "Bibliothèques et FFmpeg",
+        "body": "L’installateur prépare un environnement Python privé et télécharge notamment PyTorch, Diffusers, Transformers, Pillow, Flask et Cheroot. Ces projets conservent leurs propres licences et mentions ; la licence de l’application ne les remplace pas. Les outils image/vidéo appellent les exécutables ffmpeg et ffprobe installés sur votre ordinateur, non inclus dans le ZIP. La licence de FFmpeg dépend des options de compilation et des composants. Si vous redistribuez un environnement installé complet, joignez les conditions applicables et respectez les éventuelles obligations de fourniture des sources."
+      },
+      {
+        "id": "5",
+        "title": "Traitement local et connexions réseau",
+        "body": "Les prompts et images de référence sont transmis du navigateur à l’ordinateur exécutant Image Lab, où le modèle local configuré produit les résultats. Utiliser votre téléphone en LAN envoie donc les entrées à cet hôte, pas à un service de génération exploité par Zetalvx. Internet sert à l’installation, aux téléchargements choisis, aux métadonnées et à l’authentification des fournisseurs, ainsi qu’aux contrôles de sécurité des dépendances, qui interrogent les noms et versions des paquets. Les conditions de ces fournisseurs s’appliquent. Les traductions sont incluses et n’utilisent aucun service de traduction en ligne."
+      },
+      {
+        "id": "6",
+        "title": "Comptes, jetons et informations sensibles",
+        "body": "Le compte de l’application, les jetons des fournisseurs, projets, préréglages, images, latents conservés et journaux sont stockés sur l’hôte. Les profils de modèle contiennent des chemins locaux et des réglages, mais n’exportent pas les jetons. Protégez l’accès à cet ordinateur et ne publiez pas les répertoires de secrets, sauvegardes de comptes ou journaux non expurgés. Supprimer un jeton enregistré dans Image Lab ne le révoque pas chez le fournisseur : révoquez-le ou renouvelez-le auprès de ce dernier si nécessaire. Utilisez uniquement des hôtes et réseaux de confiance."
+      },
+      {
+        "id": "7",
+        "title": "Sauvegardes, mises à jour et suppression",
+        "body": "Les mises à jour conservent les projets, comptes, préréglages et modèles existants. Sauvegardez les données importantes avant maintenance. La désinstallation peut conserver les données personnelles ou, après confirmation explicite, supprimer le dossier d’installation et son contenu. Les modèles liés situés hors de ce dossier ne sont pas supprimés. Les sauvegardes copiées et préréglages exportés restent à leur emplacement. Supprimer un latent ne supprime pas ses PNG. Un contrôle de sécurité ou une somme de contrôle ne couvre que son périmètre annoncé ; il ne garantit ni la sûreté du modèle ni l’authenticité de l’éditeur."
+      },
+      {
+        "id": "8",
+        "title": "Textes originaux, responsabilité et assistance",
+        "body": "Les fichiers originaux LICENSE et NOTICE ci-dessous s’appliquent à l’application ; cette explication traduite ne les remplace pas. L’application est fournie « en l’état », selon les clauses de garantie et de responsabilité de sa licence et la loi applicable. Zetalvx Image Lab est indépendant, et non un produit officiel Qwen, Hugging Face ou Civitai. Avant de partager un diagnostic via les liens du projet, retirez les jetons, prompts privés, images et chemins personnels. Ouvrir cette page n’envoie aucun rapport."
+      }
+    ],
+    "resources": [
+      "Licence de l’application · original",
+      "Attributions de l’application · original",
+      "Qwen Image 2.1 · source de la licence",
+      "Texture-Fix · source et conditions",
+      "FFmpeg · informations de licence"
+    ]
+  },
+  "de": {
+    "title": "Lizenzen, Open Source und deine Daten",
+    "intro": "Was du mit der App tun darfst, was du vor der Modellnutzung prüfen solltest und wo deine Dateien gespeichert werden. Dieser Leitfaden beschreibt Image Lab; er ist keine zusätzliche Lizenz.",
+    "back": "Zurück zu Image Lab",
+    "language": "Sprache",
+    "summary": [
+      [
+        "App-Quellcode",
+        "Apache-2.0"
+      ],
+      [
+        "Modellgewichte",
+        "Separate Bedingungen"
+      ],
+      [
+        "Generierung",
+        "Auf deinem eingerichteten Host"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "Deine Rechte an der Anwendung",
+        "body": "Der Quellcode wird unter Apache License 2.0 bereitgestellt. Du darfst ihn unter deren Bedingungen nutzen, untersuchen, ändern und weitergeben, auch kommerziell. Bei der Weitergabe einer Kopie oder geänderten Fassung musst du die Lizenz beilegen, einschlägige Copyright- und NOTICE-Hinweise erhalten und Änderungen kennzeichnen. Der Kauf eines installierbaren Pakets oder von Support schränkt diese Rechte nicht ein. Die Lizenz erlaubt weder die Aneignung von Projektmarken noch die Behauptung einer nicht bestehenden Unterstützung."
+      },
+      {
+        "id": "2",
+        "title": "Vor der Nutzung von Qwen oder optionalen Komponenten",
+        "body": "Die ZIP enthält keine Modellgewichte. Modell, Transformer, VAE, Textencoder, LoRA und quantisierte Dateien behalten die Bedingungen ihrer Quelle. Qwen Image 2.1 wird unter der Qwen Research License veröffentlicht: Die reguläre Erlaubnis gilt nur für nichtkommerzielle Forschung oder Bewertung; eine kommerzielle Nutzung erfordert eine gesonderte Genehmigung des Rechteinhabers. Auch Texture-Fix ist als qwen-research gekennzeichnet. Lies die Lizenz der genau heruntergeladenen Revision. Dateikompatibilität oder ein erfolgreicher Test sind keine Nutzungserlaubnis."
+      },
+      {
+        "id": "3",
+        "title": "Bilder, berufliche Nutzung und kostenpflichtige Pakete",
+        "body": "Hole vor dem Einsatz eines Modells für Kunden, kostenpflichtige Dienste oder andere kommerzielle Tätigkeiten die laut Modelllizenz nötigen Genehmigungen ein. Ein Patreon-Paket, Hugging-Face/Civitai-Konto, Token oder eine Downloadbestätigung gewähren keine kommerzielle Modelllizenz. Prüfe deine Rechte an hochgeladenen Fotos, Logos und anderem Material sowie die Rechte abgebildeter Personen. Image Lab garantiert weder Urheberrechtsschutz oder Exklusivität noch die Freiheit erzeugter Bilder von Rechten Dritter. Prüfe Ergebnisse vor der Veröffentlichung."
+      },
+      {
+        "id": "4",
+        "title": "Bibliotheken und FFmpeg",
+        "body": "Das Installationsprogramm richtet eine private Python-Umgebung ein und lädt unter anderem PyTorch, Diffusers, Transformers, Pillow, Flask und Cheroot herunter. Diese Projekte behalten ihre eigenen Lizenzen und Hinweise; die App-Lizenz ersetzt sie nicht. Bild-/Videowerkzeuge verwenden die auf deinem Rechner installierten Programme ffmpeg und ffprobe, die nicht in der ZIP enthalten sind. Die FFmpeg-Lizenz hängt von Build-Optionen und Komponenten ab. Bei Weitergabe einer vollständig installierten Umgebung musst du die jeweiligen Bedingungen beilegen und etwaige Pflichten zur Quellcodebereitstellung erfüllen."
+      },
+      {
+        "id": "5",
+        "title": "Lokale Verarbeitung und Netzwerkverbindungen",
+        "body": "Prompts und Referenzbilder werden vom Browser an den Rechner mit Image Lab übertragen; dort erzeugt das eingerichtete lokale Modell die Ergebnisse. Bei Nutzung vom Handy im LAN gehen die Eingaben also an diesen Host, nicht an einen Generierungsdienst von Zetalvx. Internet wird für Installation, ausgewählte Downloads, Anbieter-Metadaten und -Anmeldung sowie Online-Sicherheitsprüfungen von Paketnamen und -versionen verwendet. Dabei gelten die Bedingungen der Anbieter. Übersetzungen von Oberfläche und Anleitung sind enthalten und nutzen keinen Online-Übersetzungsdienst."
+      },
+      {
+        "id": "6",
+        "title": "Konten, Token und vertrauliche Angaben",
+        "body": "App-Konto, Anbieter-Token, Projekte, Voreinstellungen, erzeugte Bilder, gespeicherte Latents und Protokolle liegen auf dem Host. Modellprofile enthalten lokale Pfade und Einstellungen, exportieren jedoch keine Anbieter-Token. Schütze den Rechnerzugang und veröffentliche keine Verzeichnisse mit Geheimnissen, Kontosicherungen oder unbereinigten Protokollen. Ein in Image Lab gelöschter Token wird beim Anbieter nicht widerrufen: Widerrufe oder erneuere ihn dort bei Bedarf. Verbinde dich nur mit vertrauenswürdigen Hosts und Netzen."
+      },
+      {
+        "id": "7",
+        "title": "Sicherungen, Updates und Entfernen",
+        "body": "Updates erhalten vorhandene Projekte, Konten, Voreinstellungen und Modelle. Sichere wichtige Daten vor Wartungsarbeiten. Bei der Deinstallation kannst du persönliche Daten behalten oder nach ausdrücklicher Bestätigung den Installationsordner samt Inhalt löschen. Verknüpfte Modelldateien außerhalb dieses Ordners werden nicht gelöscht. Kopierte Sicherungen und exportierte Voreinstellungen bleiben an ihrem Speicherort. Das Löschen eines Latents löscht nicht dessen PNGs. Eine Sicherheits- oder Prüfsummenprüfung deckt nur ihren angegebenen Umfang ab; sie garantiert weder ein sicheres Modell noch einen authentischen Herausgeber."
+      },
+      {
+        "id": "8",
+        "title": "Originaltexte, Verantwortung und Hilfe",
+        "body": "Die unten verlinkten Originaldateien LICENSE und NOTICE gelten für die App; diese übersetzte Erklärung ersetzt sie nicht. Die Anwendung wird im vorhandenen Zustand bereitgestellt, gemäß den Gewährleistungs- und Haftungsregeln der Lizenz und geltendem Recht. Zetalvx Image Lab ist unabhängig und kein offizielles Produkt von Qwen, Hugging Face oder Civitai. Entferne vor dem Teilen eines Diagnoseberichts über die Projektlinks Token, private Prompts, Bilder und persönliche Pfade. Das Öffnen dieser Seite sendet keinen Bericht."
+      }
+    ],
+    "resources": [
+      "App-Lizenz · Originaltext",
+      "App-Urheberhinweise · Originaltext",
+      "Qwen Image 2.1 · Lizenzquelle",
+      "Texture-Fix · Quelle und Bedingungen",
+      "FFmpeg · Lizenzinformationen"
+    ]
+  },
+  "pt": {
+    "title": "Licenças, código aberto e os seus dados",
+    "intro": "O que pode fazer com a aplicação, o que verificar antes de usar um modelo e onde ficam os seus ficheiros. Este guia descreve o Image Lab; não acrescenta uma licença.",
+    "back": "Voltar ao Image Lab",
+    "language": "Idioma",
+    "summary": [
+      [
+        "Código da aplicação",
+        "Apache-2.0"
+      ],
+      [
+        "Pesos dos modelos",
+        "Termos separados"
+      ],
+      [
+        "Geração",
+        "No computador configurado"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "Os seus direitos sobre a aplicação",
+        "body": "O código-fonte é fornecido sob a Apache License 2.0. Pode usá-lo, estudá-lo, modificá-lo e redistribuí-lo, incluindo para fins comerciais, respeitando essa licença. Ao distribuir uma cópia ou versão modificada, inclua a licença, preserve os avisos de direitos de autor e as atribuições NOTICE pertinentes e identifique as alterações. Pagar por um pacote pronto a instalar ou por assistência não limita esses direitos. A licença não autoriza apropriar-se das marcas do projeto nem afirmar um apoio inexistente."
+      },
+      {
+        "id": "2",
+        "title": "Antes de usar Qwen ou um componente opcional",
+        "body": "O ZIP não contém pesos de modelos. O modelo, transformer, VAE, codificador de texto, LoRA e ficheiros quantizados mantêm os termos da sua fonte. Qwen Image 2.1 publica a Qwen Research License: a autorização habitual limita-se a investigação ou avaliação não comercial; o uso comercial exige permissão separada do titular. Texture-Fix também indica qwen-research. Leia a licença da revisão exata que descarrega. A compatibilidade de um ficheiro ou um teste bem-sucedido não concede permissão de uso."
+      },
+      {
+        "id": "3",
+        "title": "Imagens, trabalho profissional e pacotes pagos",
+        "body": "Antes de usar um modelo para clientes, serviços pagos ou outras atividades comerciais, obtenha as permissões exigidas pela sua licença. Um pacote Patreon, conta Hugging Face/Civitai, token ou confirmação de download não fornece uma licença comercial do modelo. Verifique os direitos sobre fotografias, logótipos e outros materiais carregados, bem como os direitos das pessoas representadas. O Image Lab não garante titularidade de direitos de autor, exclusividade ou ausência de direitos de terceiros nas imagens geradas. Reveja os resultados antes de os publicar."
+      },
+      {
+        "id": "4",
+        "title": "Bibliotecas e FFmpeg",
+        "body": "O instalador prepara um ambiente Python privado e descarrega dependências, incluindo PyTorch, Diffusers, Transformers, Pillow, Flask e Cheroot. Estes projetos conservam as suas licenças e avisos; a licença da aplicação não os substitui. As ferramentas de imagem/vídeo usam os executáveis ffmpeg e ffprobe instalados no computador, não incluídos no ZIP. A licença do FFmpeg depende da compilação e dos componentes. Se redistribuir um ambiente instalado completo, inclua os termos aplicáveis e cumpra eventuais obrigações de fornecimento do código-fonte."
+      },
+      {
+        "id": "5",
+        "title": "Processamento local e ligações de rede",
+        "body": "Os prompts e imagens de referência são enviados do navegador para o computador que executa o Image Lab, onde o modelo local configurado gera os resultados. Usar o telemóvel na LAN envia os dados para esse computador, não para um serviço de geração da Zetalvx. A Internet é usada na instalação, nos downloads escolhidos, em metadados/autenticação de fornecedores e em verificações de segurança que consultam nomes e versões dos pacotes. Aplicam-se os termos desses fornecedores. As traduções da interface e do guia estão incluídas e não usam serviços de tradução online."
+      },
+      {
+        "id": "6",
+        "title": "Contas, tokens e informações sensíveis",
+        "body": "A conta da aplicação, tokens, projetos, predefinições, imagens geradas, latentes guardados e registos ficam no computador anfitrião. Os perfis de modelo contêm caminhos locais e definições, mas não exportam tokens de fornecedores. Proteja o acesso ao computador e não publique diretórios de segredos, cópias de contas ou registos sem revisão. Remover um token guardado no Image Lab não o revoga no fornecedor: revogue-o ou renove-o nesse serviço quando necessário. Ligue-se apenas a computadores e redes de confiança."
+      },
+      {
+        "id": "7",
+        "title": "Cópias de segurança, atualizações e remoção",
+        "body": "As atualizações preservam os projetos, conta, predefinições e modelos existentes. Faça cópias dos dados importantes antes da manutenção. A desinstalação pode preservar dados pessoais ou, após confirmação explícita, eliminar a pasta de instalação e o seu conteúdo. Os modelos ligados que estejam fora dessa pasta não são eliminados. Cópias e predefinições exportadas permanecem onde foram guardadas. Eliminar um latente não elimina os seus PNG. Uma verificação de segurança ou checksum cobre apenas o âmbito declarado; não garante um modelo seguro ou um editor autêntico."
+      },
+      {
+        "id": "8",
+        "title": "Textos originais, responsabilidade e assistência",
+        "body": "Os ficheiros originais LICENSE e NOTICE abaixo aplicam-se à aplicação; esta explicação traduzida não os substitui. A aplicação é fornecida no estado em que se encontra, sujeita às disposições de garantia e responsabilidade da licença e à lei aplicável. O Zetalvx Image Lab é independente, não um produto oficial Qwen, Hugging Face ou Civitai. Antes de partilhar diagnósticos pelos links do projeto, remova tokens, prompts privados, imagens e caminhos pessoais. Abrir esta página não envia nenhum relatório."
+      }
+    ],
+    "resources": [
+      "Licença da aplicação · original",
+      "Atribuições da aplicação · original",
+      "Qwen Image 2.1 · fonte da licença",
+      "Texture-Fix · fonte e termos",
+      "FFmpeg · informações de licença"
+    ]
+  },
+  "ru": {
+    "title": "Лицензии, открытый код и ваши данные",
+    "intro": "Что разрешено делать с приложением, что проверить перед использованием модели и где хранятся файлы. Эта справка описывает Image Lab, но не является дополнительной лицензией.",
+    "back": "Вернуться в Image Lab",
+    "language": "Язык",
+    "summary": [
+      [
+        "Код приложения",
+        "Apache-2.0"
+      ],
+      [
+        "Веса моделей",
+        "Отдельные условия"
+      ],
+      [
+        "Генерация",
+        "На настроенном компьютере"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "Ваши права на приложение",
+        "body": "Исходный код предоставляется по Apache License 2.0. Его можно использовать, изучать, изменять и распространять, в том числе коммерчески, с соблюдением лицензии. При распространении копии или изменённой версии приложите лицензию, сохраните относящиеся к ней уведомления об авторских правах и NOTICE и обозначьте изменения. Покупка готового установочного пакета или поддержки не ограничивает эти права. Лицензия не разрешает присваивать товарные знаки проекта или заявлять о несуществующем одобрении."
+      },
+      {
+        "id": "2",
+        "title": "Перед использованием Qwen и дополнительных компонентов",
+        "body": "В ZIP нет весов моделей. Модель, transformer, VAE, текстовый энкодер, LoRA и квантованные файлы сохраняют условия своего источника. Qwen Image 2.1 публикуется под Qwen Research License: обычное разрешение ограничено некоммерческими исследованиями или оценкой; коммерческое использование требует отдельного разрешения правообладателя. Texture-Fix также помечен qwen-research. Читайте лицензию именно загружаемой ревизии. Совместимость файла или успешный тест не означают разрешения на использование."
+      },
+      {
+        "id": "3",
+        "title": "Изображения, профессиональная работа и платные пакеты",
+        "body": "До использования модели для клиентов, платных сервисов или другой коммерческой деятельности получите разрешения, требуемые её лицензией. Пакет Patreon, аккаунт Hugging Face/Civitai, токен или подтверждение загрузки не предоставляют коммерческую лицензию на модель. Проверьте свои права на загружаемые фотографии, логотипы и другие материалы, а также права изображённых людей. Image Lab не гарантирует авторские права, исключительность или отсутствие прав третьих лиц на результат. Проверяйте изображения перед публикацией."
+      },
+      {
+        "id": "4",
+        "title": "Библиотеки и FFmpeg",
+        "body": "Установщик создаёт отдельную среду Python и загружает зависимости, включая PyTorch, Diffusers, Transformers, Pillow, Flask и Cheroot. Эти проекты сохраняют собственные лицензии и уведомления; лицензия приложения их не заменяет. Инструменты изображений и видео вызывают установленные на компьютере ffmpeg и ffprobe, которых нет в ZIP. Лицензия FFmpeg зависит от параметров сборки и компонентов. При распространении всей установленной среды приложите применимые условия и выполните возможные обязательства по предоставлению исходного кода компонентов."
+      },
+      {
+        "id": "5",
+        "title": "Локальная обработка и сетевые подключения",
+        "body": "Запросы и исходные изображения передаются из браузера на компьютер с Image Lab, где работает настроенная локальная модель. При подключении телефона по LAN данные идут на этот компьютер, а не в сервис генерации Zetalvx. Интернет нужен для установки, выбранных загрузок, метаданных и авторизации поставщиков, а также проверок безопасности зависимостей по названиям и версиям пакетов. Применяются условия соответствующих поставщиков. Переводы интерфейса и справки входят в пакет и не используют онлайн-переводчик."
+      },
+      {
+        "id": "6",
+        "title": "Аккаунты, токены и конфиденциальные сведения",
+        "body": "Аккаунт приложения, токены поставщиков, проекты, пресеты, изображения, сохранённые латенты и журналы находятся на серверном компьютере. Профили моделей содержат локальные пути и настройки, но не экспортируют токены. Защитите доступ к компьютеру и не публикуйте каталоги секретов, резервные копии аккаунтов и неочищенные журналы. Удаление сохранённого токена из Image Lab не отзывает его у поставщика: при необходимости отзовите или обновите его там. Подключайтесь только к доверенным компьютерам и сетям."
+      },
+      {
+        "id": "7",
+        "title": "Резервные копии, обновления и удаление",
+        "body": "Обновления сохраняют существующие проекты, аккаунт, пресеты и модели. Перед обслуживанием создайте резервную копию важных данных. При удалении приложения можно сохранить личные данные либо после явного подтверждения удалить папку установки вместе с содержимым. Связанные модели вне этой папки не удаляются. Сделанные копии и экспортированные пресеты остаются там, где вы их сохранили. Удаление латента не удаляет его PNG. Проверка безопасности или контрольной суммы охватывает лишь заявленные условия и не гарантирует безопасность модели либо подлинность издателя."
+      },
+      {
+        "id": "8",
+        "title": "Оригинальные тексты, ответственность и помощь",
+        "body": "К приложению относятся оригинальные LICENSE и NOTICE по ссылкам ниже; этот перевод их не заменяет. Приложение предоставляется «как есть», с учётом условий лицензии о гарантиях и ответственности и применимого закона. Zetalvx Image Lab — независимое приложение, не официальный продукт Qwen, Hugging Face или Civitai. Перед отправкой диагностики через ссылки проекта удалите токены, личные запросы, изображения и персональные пути. Открытие этой страницы не отправляет отчёты."
+      }
+    ],
+    "resources": [
+      "Лицензия приложения · оригинал",
+      "Атрибуции приложения · оригинал",
+      "Qwen Image 2.1 · источник лицензии",
+      "Texture-Fix · источник и условия",
+      "FFmpeg · сведения о лицензии"
+    ]
+  },
+  "zh": {
+    "title": "许可证、开源与您的数据",
+    "intro": "了解应用允许哪些操作、使用模型前应检查什么，以及文件存放在哪里。本指南介绍 Image Lab，不构成额外许可证。",
+    "back": "返回 Image Lab",
+    "language": "语言",
+    "summary": [
+      [
+        "应用源代码",
+        "Apache-2.0"
+      ],
+      [
+        "模型权重",
+        "适用独立条款"
+      ],
+      [
+        "生成计算",
+        "在您配置的主机上"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "您对应用享有的权利",
+        "body": "应用源代码采用 Apache License 2.0。遵守许可证即可使用、研究、修改和再分发，包括商业用途。分发原版或修改版时，应附上许可证，保留适用的版权声明和 NOTICE 归属信息，并标明修改。购买安装包或支持服务不会限制这些权利。许可证不允许冒充官方认可，也不授予将项目商标据为己有的权利。"
+      },
+      {
+        "id": "2",
+        "title": "使用 Qwen 或可选组件之前",
+        "body": "ZIP 不包含模型权重。您选择的模型、transformer、VAE、文本编码器、LoRA 和量化文件仍适用来源各自的条款。Qwen Image 2.1 公布的许可证为 Qwen Research License：常规授权仅限非商业研究或评估，商业使用需要权利人另行许可。Texture-Fix 也标为 qwen-research。请阅读您下载的具体版本的许可证。文件兼容或测试成功不等于获得使用授权。"
+      },
+      {
+        "id": "3",
+        "title": "图像、专业工作和付费安装包",
+        "body": "将模型用于客户项目、付费服务或其他商业活动前，请取得模型许可证要求的授权。Patreon 安装包、Hugging Face/Civitai 账号、令牌或下载确认都不会提供模型商业许可证。请确认您对上传的照片、标志和其他素材拥有必要权利，并尊重被描绘者的权利。Image Lab 不保证生成图像的著作权归属、独占性或不侵犯第三方权利。发布前请检查结果。"
+      },
+      {
+        "id": "4",
+        "title": "软件库与 FFmpeg",
+        "body": "安装程序创建独立 Python 环境，并获取 PyTorch、Diffusers、Transformers、Pillow、Flask 和 Cheroot 等依赖。这些项目保留自己的许可证和声明，应用许可证不会替代它们。图像和视频工具调用您电脑上安装的 ffmpeg 与 ffprobe 可执行文件；ZIP 中不包含这些二进制文件。FFmpeg 的许可证取决于编译选项和组件。如果再分发完整安装环境，应提供适用的第三方条款，并履行相关组件可能要求的源代码提供义务。"
+      },
+      {
+        "id": "5",
+        "title": "本地处理与网络连接",
+        "body": "提示词和参考图像从浏览器发送到运行 Image Lab 的电脑，由配置的本地模型生成结果。因此，在局域网用手机访问时，输入发送到该主机，而不是 Zetalvx 运营的云端生成服务。安装、所选下载、提供方元数据与身份验证，以及按包名和版本进行的在线依赖安全检查会访问互联网，适用对应提供方的条款。界面和指南翻译已随应用提供，不使用在线翻译服务。"
+      },
+      {
+        "id": "6",
+        "title": "账号、令牌与敏感信息",
+        "body": "应用账号、提供方令牌、项目、预设、生成图像、保留的潜变量和日志均保存在主机上。模型配置文件包含本地路径与设置，不导出提供方令牌。请保护主机访问权限，不要公开密钥目录、账号备份或未经清理的日志。在 Image Lab 中删除已保存令牌不会在提供方处撤销令牌；必要时应到相应服务撤销或更换。只连接可信的主机与网络。"
+      },
+      {
+        "id": "7",
+        "title": "备份、更新与卸载",
+        "body": "更新会保留现有项目、账号、预设和模型。维护前请备份重要数据。卸载时可以保留个人数据，也可以在明确确认后删除安装目录及其内容。链接到该目录之外的模型文件不会被删除。已复制的备份和导出的预设仍保留在您保存的位置。删除潜变量不会删除其 PNG 输出。安全检查或校验和仅验证其声明的范围，不能保证模型安全或发布者身份真实。"
+      },
+      {
+        "id": "8",
+        "title": "原始文本、责任与支持",
+        "body": "下方的原始 LICENSE 和 NOTICE 适用于应用，本页翻译说明不替代它们。应用按“现状”提供，受许可证中的担保、责任条款及适用法律约束。Zetalvx Image Lab 是独立应用，并非 Qwen、Hugging Face 或 Civitai 官方产品。通过项目链接分享诊断信息前，请删除令牌、私人提示词、图像及个人路径。打开本页不会发送任何报告。"
+      }
+    ],
+    "resources": [
+      "应用许可证 · 原文",
+      "应用归属声明 · 原文",
+      "Qwen Image 2.1 · 许可证来源",
+      "Texture-Fix · 来源与条款",
+      "FFmpeg · 许可证信息"
+    ]
+  },
+  "ja": {
+    "title": "ライセンス、オープンソースとデータ",
+    "intro": "アプリで許可されること、モデルを使う前の確認事項、ファイルの保存先を説明します。このガイドは Image Lab の説明であり、追加のライセンスではありません。",
+    "back": "Image Lab に戻る",
+    "language": "言語",
+    "summary": [
+      [
+        "アプリのコード",
+        "Apache-2.0"
+      ],
+      [
+        "モデルの重み",
+        "別途の利用条件"
+      ],
+      [
+        "生成処理",
+        "設定したホストで実行"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "アプリに関する利用者の権利",
+        "body": "ソースコードは Apache License 2.0 で提供されます。ライセンスに従い、商用目的を含め利用、調査、変更、再配布できます。複製や変更版を配布する場合は、ライセンスを添付し、該当する著作権表示と NOTICE の帰属表示を保ち、変更を明示してください。インストール用パッケージやサポートの購入は、これらの権利を制限しません。ライセンスは架空の公認を名乗ることや、プロジェクトの商標を自分のものとして使うことを許可しません。"
+      },
+      {
+        "id": "2",
+        "title": "Qwen や追加コンポーネントを使う前に",
+        "body": "ZIP にモデルの重みは含まれません。モデル、transformer、VAE、テキストエンコーダー、LoRA、量子化ファイルには、それぞれの配布元の条件が適用されます。Qwen Image 2.1 が公開する Qwen Research License の通常の許可は非商用の研究・評価に限定され、商用利用には権利者の別途許可が必要です。Texture-Fix も qwen-research と表示されています。ダウンロードする正確なリビジョンのライセンスを確認してください。互換性やテスト成功は利用許可を意味しません。"
+      },
+      {
+        "id": "3",
+        "title": "画像、業務利用と有料パッケージ",
+        "body": "顧客向け業務、有料サービスなどの商用活動でモデルを使う前に、そのライセンスが求める許可を取得してください。Patreon パッケージ、Hugging Face/Civitai アカウント、トークン、ダウンロード確認はモデルの商用ライセンスを提供しません。アップロードする写真、ロゴ、素材の権利と、描かれた人物の権利を確認してください。Image Lab は生成画像の著作権帰属、独占性、第三者の権利を侵害しないことを保証しません。公開前に結果を確認してください。"
+      },
+      {
+        "id": "4",
+        "title": "ライブラリと FFmpeg",
+        "body": "インストーラーは専用 Python 環境を準備し、PyTorch、Diffusers、Transformers、Pillow、Flask、Cheroot などの依存関係を取得します。各プロジェクトのライセンスと表示はそのまま適用され、アプリのライセンスでは置き換わりません。画像・動画ツールは利用者がインストールした ffmpeg と ffprobe を呼び出し、これらの実行ファイルは ZIP に含まれません。FFmpeg のライセンスはビルド設定と構成要素で異なります。実行環境全体を再配布する際は、適用条件と必要なソースコード提供義務を守ってください。"
+      },
+      {
+        "id": "5",
+        "title": "ローカル処理とネットワーク接続",
+        "body": "プロンプトと参照画像はブラウザーから Image Lab を実行するコンピューターへ送られ、そのホストのローカルモデルで生成されます。LAN 経由でスマートフォンを使う場合も、送信先はそのホストであり、Zetalvx の生成サービスではありません。インストール、選択したダウンロード、提供元のメタデータ・認証、パッケージ名とバージョンによる依存関係の安全性確認にはインターネットを使います。提供元の条件が適用されます。画面とガイドの翻訳は同梱され、オンライン翻訳は使いません。"
+      },
+      {
+        "id": "6",
+        "title": "アカウント、トークンと機密情報",
+        "body": "アプリのアカウント、提供元のトークン、プロジェクト、プリセット、画像、保存した潜在データ、ログはホストに保存されます。モデルプロファイルはローカルパスと設定を含みますが、提供元のトークンを出力しません。コンピューターへのアクセスを保護し、秘密情報のフォルダー、アカウントのバックアップ、未編集のログを公開しないでください。Image Lab から保存トークンを削除しても提供元では失効しません。必要に応じて提供元で失効・再発行してください。信頼できるホストとネットワークだけに接続してください。"
+      },
+      {
+        "id": "7",
+        "title": "バックアップ、更新と削除",
+        "body": "更新は既存のプロジェクト、アカウント、プリセット、モデルを保持します。保守作業の前に重要なデータをバックアップしてください。アンインストールでは個人データを保持するか、明示的に確認してインストールフォルダーとその内容を削除できます。外部フォルダーにあるリンク先のモデルは削除されません。コピー済みのバックアップや出力したプリセットは保存先に残ります。潜在データの削除は PNG を削除しません。安全性検査やチェックサムは説明された範囲だけを確認し、モデルの安全性や発行元の真正性を保証しません。"
+      },
+      {
+        "id": "8",
+        "title": "原文、責任とサポート",
+        "body": "下記の原文 LICENSE と NOTICE がアプリに適用され、この翻訳説明は原文を置き換えません。アプリは現状のまま提供され、ライセンスの保証・責任条項と適用法に従います。Zetalvx Image Lab は独立したアプリで、Qwen、Hugging Face、Civitai の公式製品ではありません。プロジェクトのリンクから診断を共有する前に、トークン、私的なプロンプト、画像、個人のパスを削除してください。このページを開いてもレポートは送信されません。"
+      }
+    ],
+    "resources": [
+      "アプリのライセンス · 原文",
+      "アプリの帰属表示 · 原文",
+      "Qwen Image 2.1 · ライセンスの配布元",
+      "Texture-Fix · 配布元と条件",
+      "FFmpeg · ライセンス情報"
+    ]
+  },
+  "ko": {
+    "title": "라이선스, 오픈 소스 및 내 데이터",
+    "intro": "앱으로 할 수 있는 일, 모델 사용 전에 확인할 사항, 파일 저장 위치를 안내합니다. 이 안내는 Image Lab의 설명이며 추가 라이선스가 아닙니다.",
+    "back": "Image Lab으로 돌아가기",
+    "language": "언어",
+    "summary": [
+      [
+        "앱 소스 코드",
+        "Apache-2.0"
+      ],
+      [
+        "모델 가중치",
+        "별도 이용 조건"
+      ],
+      [
+        "생성 작업",
+        "설정한 호스트에서 실행"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "애플리케이션에 대한 사용자 권리",
+        "body": "앱 소스 코드는 Apache License 2.0으로 제공됩니다. 라이선스를 준수하면 상업적 목적을 포함하여 사용, 연구, 수정 및 재배포할 수 있습니다. 복사본이나 수정본을 배포할 때는 라이선스를 포함하고 관련 저작권 및 NOTICE 표시를 보존하며 변경 내용을 명시해야 합니다. 설치 패키지나 지원 서비스를 구매해도 이러한 권리는 제한되지 않습니다. 이 라이선스는 존재하지 않는 공식 승인을 주장하거나 프로젝트 상표를 자신의 것으로 사용하는 것을 허용하지 않습니다."
+      },
+      {
+        "id": "2",
+        "title": "Qwen 또는 선택적 구성 요소 사용 전",
+        "body": "ZIP에는 모델 가중치가 없습니다. 선택한 모델, transformer, VAE, 텍스트 인코더, LoRA 및 양자화 파일에는 각 출처의 조건이 적용됩니다. Qwen Image 2.1이 공개한 Qwen Research License의 기본 허용 범위는 비상업적 연구 또는 평가이며, 상업적 사용에는 권리자의 별도 허가가 필요합니다. Texture-Fix도 qwen-research로 표시됩니다. 다운로드하는 정확한 리비전의 라이선스를 읽으세요. 파일 호환성이나 테스트 성공은 사용 허가를 뜻하지 않습니다."
+      },
+      {
+        "id": "3",
+        "title": "이미지, 업무 사용 및 유료 패키지",
+        "body": "모델을 고객 업무, 유료 서비스 또는 다른 상업적 활동에 사용하기 전에 모델 라이선스가 요구하는 허가를 받으세요. Patreon 패키지, Hugging Face/Civitai 계정, 토큰 또는 다운로드 확인은 모델의 상업적 라이선스를 제공하지 않습니다. 업로드한 사진, 로고 및 자료의 권리와 묘사된 사람들의 권리를 확인하세요. Image Lab은 생성 이미지의 저작권 소유, 독점성 또는 제3자 권리 침해가 없음을 보장하지 않습니다. 게시 전에 결과를 검토하세요."
+      },
+      {
+        "id": "4",
+        "title": "라이브러리와 FFmpeg",
+        "body": "설치 프로그램은 전용 Python 환경을 준비하고 PyTorch, Diffusers, Transformers, Pillow, Flask, Cheroot 등의 의존성을 가져옵니다. 각 프로젝트의 라이선스와 고지는 그대로 적용되며 앱 라이선스가 이를 대체하지 않습니다. 이미지·동영상 도구는 사용자 컴퓨터의 ffmpeg와 ffprobe 실행 파일을 호출하고, 해당 바이너리는 ZIP에 포함되지 않습니다. FFmpeg 라이선스는 빌드 옵션과 구성 요소에 따라 달라집니다. 설치 환경 전체를 재배포한다면 해당 조건과 필요한 소스 코드 제공 의무를 준수하세요."
+      },
+      {
+        "id": "5",
+        "title": "로컬 처리와 네트워크 연결",
+        "body": "프롬프트와 참조 이미지는 브라우저에서 Image Lab을 실행하는 컴퓨터로 전송되며, 설정한 로컬 모델이 그곳에서 결과를 생성합니다. 휴대전화로 LAN에 접속해도 입력은 해당 호스트로 전송되며 Zetalvx가 운영하는 생성 서비스로 전송되지 않습니다. 설치, 선택한 다운로드, 공급자 메타데이터·인증 및 패키지 이름·버전을 조회하는 의존성 보안 검사에는 인터넷을 사용합니다. 공급자 조건이 적용됩니다. 인터페이스와 안내 번역은 포함되어 있으며 온라인 번역 서비스를 사용하지 않습니다."
+      },
+      {
+        "id": "6",
+        "title": "계정, 토큰 및 민감한 정보",
+        "body": "앱 계정, 공급자 토큰, 프로젝트, 프리셋, 생성 이미지, 보관한 잠재 데이터와 로그는 호스트에 저장됩니다. 모델 프로필에는 로컬 경로와 설정이 들어가지만 공급자 토큰은 내보내지 않습니다. 컴퓨터 접근을 보호하고 비밀 정보 폴더, 계정 백업 또는 정리하지 않은 로그를 공개하지 마세요. Image Lab에서 저장된 토큰을 삭제해도 공급자에서 취소되지는 않으므로 필요하면 해당 서비스에서 취소하거나 갱신하세요. 신뢰하는 호스트와 네트워크에만 연결하세요."
+      },
+      {
+        "id": "7",
+        "title": "백업, 업데이트 및 삭제",
+        "body": "업데이트는 기존 프로젝트, 계정, 프리셋과 모델을 보존합니다. 유지보수 전에 중요한 데이터를 백업하세요. 제거 시 개인 데이터를 유지하거나 명시적으로 확인한 뒤 설치 폴더와 그 내용을 삭제할 수 있습니다. 폴더 외부에 있는 연결된 모델 파일은 삭제하지 않습니다. 복사한 백업과 내보낸 프리셋은 저장한 위치에 남습니다. 잠재 데이터를 삭제해도 PNG 결과는 삭제되지 않습니다. 보안 검사나 체크섬은 명시된 범위만 확인하며 모델 안전성이나 배포자 신원을 보장하지 않습니다."
+      },
+      {
+        "id": "8",
+        "title": "원문, 책임 및 지원",
+        "body": "아래의 원본 LICENSE와 NOTICE가 앱에 적용되며 이 번역 안내는 해당 문서를 대체하지 않습니다. 앱은 라이선스의 보증·책임 조항과 적용 법률에 따라 있는 그대로 제공됩니다. Zetalvx Image Lab은 독립 앱이며 Qwen, Hugging Face 또는 Civitai의 공식 제품이 아닙니다. 프로젝트 링크로 진단 자료를 공유하기 전에 토큰, 비공개 프롬프트, 이미지와 개인 경로를 제거하세요. 이 페이지를 열어도 보고서가 전송되지 않습니다."
+      }
+    ],
+    "resources": [
+      "앱 라이선스 · 원문",
+      "앱 저작자 고지 · 원문",
+      "Qwen Image 2.1 · 라이선스 출처",
+      "Texture-Fix · 출처와 조건",
+      "FFmpeg · 라이선스 정보"
+    ]
+  },
+  "tr": {
+    "title": "Lisanslar, açık kaynak ve verileriniz",
+    "intro": "Uygulamayla neler yapabileceğiniz, model kullanmadan önce kontrol etmeniz gerekenler ve dosyalarınızın nerede tutulduğu. Bu kılavuz Image Lab’ı açıklar; ek bir lisans değildir.",
+    "back": "Image Lab’a dön",
+    "language": "Dil",
+    "summary": [
+      [
+        "Uygulama kodu",
+        "Apache-2.0"
+      ],
+      [
+        "Model ağırlıkları",
+        "Ayrı koşullar"
+      ],
+      [
+        "Üretim",
+        "Yapılandırdığınız bilgisayarda"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "Uygulama üzerindeki haklarınız",
+        "body": "Kaynak kod Apache License 2.0 ile sunulur. Lisansa uyarak ticari amaçlar dâhil kullanabilir, inceleyebilir, değiştirebilir ve yeniden dağıtabilirsiniz. Bir kopya veya değiştirilmiş sürüm dağıtırken lisansı ekleyin, ilgili telif ve NOTICE atıflarını koruyun ve değişiklikleri belirtin. Kuruluma hazır paket veya destek için ödeme yapmak bu hakları sınırlamaz. Lisans, gerçekte olmayan bir onay iddiasına veya proje markalarını kendinize aitmiş gibi kullanmaya izin vermez."
+      },
+      {
+        "id": "2",
+        "title": "Qwen veya isteğe bağlı bileşenleri kullanmadan önce",
+        "body": "ZIP model ağırlığı içermez. Seçtiğiniz model, transformer, VAE, metin kodlayıcı, LoRA ve nicemlenmiş dosyalar kaynaklarının koşullarına tabidir. Qwen Image 2.1 için yayımlanan Qwen Research License’ın olağan izni yalnızca ticari olmayan araştırma veya değerlendirmeyi kapsar; ticari kullanım için hak sahibinden ayrı izin gerekir. Texture-Fix de qwen-research olarak etiketlidir. İndirdiğiniz kesin revizyonun lisansını okuyun. Dosya uyumluluğu veya başarılı test kullanım izni değildir."
+      },
+      {
+        "id": "3",
+        "title": "Görseller, profesyonel çalışma ve ücretli paketler",
+        "body": "Modeli müşteriler, ücretli hizmetler veya diğer ticari faaliyetler için kullanmadan önce model lisansının gerektirdiği izinleri alın. Patreon paketi, Hugging Face/Civitai hesabı, erişim anahtarı veya indirme onayı ticari model lisansı sağlamaz. Yüklediğiniz fotoğraflar, logolar ve diğer içerikler üzerindeki hakları ve betimlenen kişilerin haklarını kontrol edin. Image Lab, üretilen görselin telif sahipliğini, münhasırlığını veya üçüncü kişi haklarından arınmışlığını garanti etmez. Yayımlamadan önce sonuçları inceleyin."
+      },
+      {
+        "id": "4",
+        "title": "Kütüphaneler ve FFmpeg",
+        "body": "Yükleyici özel bir Python ortamı hazırlar ve PyTorch, Diffusers, Transformers, Pillow, Flask ve Cheroot gibi bağımlılıkları indirir. Bu projeler kendi lisans ve bildirimlerini korur; uygulama lisansı bunların yerine geçmez. Görsel/video araçları bilgisayarınızdaki ffmpeg ve ffprobe yürütülebilir dosyalarını kullanır; bu ikili dosyalar ZIP’e dâhil değildir. FFmpeg lisansı derleme seçeneklerine ve bileşenlere bağlıdır. Kurulu ortamın tamamını yeniden dağıtırsanız geçerli koşulları ekleyin ve bileşenlerin olası kaynak kod sağlama yükümlülüklerini yerine getirin."
+      },
+      {
+        "id": "5",
+        "title": "Yerel işleme ve ağ bağlantıları",
+        "body": "İstemler ve referans görseller tarayıcıdan Image Lab’ın çalıştığı bilgisayara gönderilir; yapılandırılan yerel model üretimi orada yapar. Telefonu LAN üzerinden kullanmak girdileri Zetalvx’in bir üretim hizmetine değil bu bilgisayara gönderir. Kurulum, seçilen indirmeler, sağlayıcı metaverileri ve kimlik doğrulaması ile paket adı ve sürümlerini sorgulayan güvenlik kontrolleri internet kullanır. Sağlayıcı koşulları geçerlidir. Arayüz ve kılavuz çevirileri pakete dâhildir; çevrimiçi çeviri hizmeti kullanmaz."
+      },
+      {
+        "id": "6",
+        "title": "Hesaplar, erişim anahtarları ve hassas bilgiler",
+        "body": "Uygulama hesabı, sağlayıcı erişim anahtarları, projeler, ön ayarlar, görseller, saklanan latentler ve günlükler ana bilgisayarda tutulur. Model profilleri yerel yollar ve ayarlar içerir, sağlayıcı erişim anahtarlarını dışa aktarmaz. Bilgisayara erişimi koruyun; gizli bilgi klasörlerini, hesap yedeklerini veya temizlenmemiş günlükleri yayımlamayın. Image Lab’dan kayıtlı anahtarı silmek onu sağlayıcıda iptal etmez; gerektiğinde o hizmette iptal edin veya yenileyin. Yalnızca güvendiğiniz bilgisayar ve ağlara bağlanın."
+      },
+      {
+        "id": "7",
+        "title": "Yedekler, güncellemeler ve kaldırma",
+        "body": "Güncellemeler mevcut proje, hesap, ön ayar ve modelleri korur. Bakımdan önce önemli verileri yedekleyin. Kaldırma işlemi kişisel verileri koruyabilir veya açık onaydan sonra kurulum klasörünü ve içindekileri silebilir. Bu klasör dışındaki bağlı model dosyaları silinmez. Kopyalanmış yedek ve dışa aktarılmış ön ayarlar kaydettiğiniz yerde kalır. Bir latent silindiğinde PNG çıktıları silinmez. Güvenlik veya sağlama toplamı kontrolü yalnızca belirtilen kapsamı doğrular; modelin güvenliğini veya yayıncının gerçekliğini garanti etmez."
+      },
+      {
+        "id": "8",
+        "title": "Asıl metinler, sorumluluk ve destek",
+        "body": "Aşağıdaki asıl LICENSE ve NOTICE dosyaları uygulama için geçerlidir; bu çevrilmiş açıklama onların yerine geçmez. Uygulama, lisansın garanti ve sorumluluk hükümleri ile geçerli hukuk çerçevesinde olduğu gibi sunulur. Zetalvx Image Lab bağımsızdır; resmî Qwen, Hugging Face veya Civitai ürünü değildir. Proje bağlantıları üzerinden tanılama paylaşmadan önce erişim anahtarlarını, özel istemleri, görselleri ve kişisel yolları kaldırın. Bu sayfayı açmak herhangi bir rapor göndermez."
+      }
+    ],
+    "resources": [
+      "Uygulama lisansı · asıl metin",
+      "Uygulama atıfları · asıl metin",
+      "Qwen Image 2.1 · lisans kaynağı",
+      "Texture-Fix · kaynak ve koşullar",
+      "FFmpeg · lisans bilgileri"
+    ]
+  },
+  "ar": {
+    "title": "التراخيص والمصدر المفتوح وبياناتك",
+    "intro": "ما الذي يمكنك فعله بالتطبيق، وما الذي يجب التحقق منه قبل استخدام نموذج، وأين تُحفظ ملفاتك. يشرح هذا الدليل Image Lab ولا يشكّل ترخيصًا إضافيًا.",
+    "back": "العودة إلى Image Lab",
+    "language": "اللغة",
+    "summary": [
+      [
+        "الشيفرة المصدرية للتطبيق",
+        "Apache-2.0"
+      ],
+      [
+        "أوزان النماذج",
+        "شروط منفصلة"
+      ],
+      [
+        "التوليد",
+        "على الحاسوب الذي أعددته"
+      ]
+    ],
+    "sections": [
+      {
+        "id": "1",
+        "title": "حقوقك في التطبيق",
+        "body": "تُقدَّم الشيفرة المصدرية وفق Apache License 2.0. يمكنك استخدامها ودراستها وتعديلها وإعادة توزيعها، بما في ذلك للأغراض التجارية، مع الالتزام بالترخيص. عند توزيع نسخة أو إصدار معدّل، أرفق الترخيص واحتفظ بإشعارات حقوق النشر ونِسب المساهمات ذات الصلة في NOTICE وبيّن تعديلاتك. شراء حزمة جاهزة للتثبيت أو خدمة دعم لا يحدّ من هذه الحقوق. لا يمنح الترخيص حق ادعاء تأييد غير موجود أو استخدام علامات المشروع على أنها ملكك."
+      },
+      {
+        "id": "2",
+        "title": "قبل استخدام Qwen أو مكوّن اختياري",
+        "body": "لا تتضمن حزمة ZIP أوزان نماذج. يحتفظ النموذج وtransformer وVAE ومُرمّز النص وLoRA والملفات المكمّمة بشروط مصدرها. الترخيص المنشور لـ Qwen Image 2.1 هو Qwen Research License: يقتصر الإذن الاعتيادي على البحث أو التقييم غير التجاري، ويتطلب الاستخدام التجاري إذنًا منفصلًا من صاحب الحقوق. ويحمل Texture-Fix أيضًا وسم qwen-research. اقرأ ترخيص المراجعة المحددة التي تنزّلها. توافق ملف أو نجاح اختبار لا يُعدّ إذنًا بالاستخدام."
+      },
+      {
+        "id": "3",
+        "title": "الصور والعمل المهني والحزم المدفوعة",
+        "body": "قبل استخدام نموذج للعمل مع عملاء أو لخدمة مدفوعة أو لأي نشاط تجاري، احصل على الأذونات التي يتطلبها ترخيصه. لا تمنحك حزمة Patreon أو حساب Hugging Face/Civitai أو رمز وصول أو تأكيد تنزيل ترخيصًا تجاريًا للنموذج. تحقّق من حقوقك في الصور والشعارات والمواد المرفوعة ومن حقوق الأشخاص المصوّرين. لا يضمن Image Lab ملكية حقوق النشر أو الحصرية أو خلوّ الصور المولّدة من حقوق الآخرين. راجع النتائج قبل نشرها."
+      },
+      {
+        "id": "4",
+        "title": "المكتبات وFFmpeg",
+        "body": "يُجهّز المثبّت بيئة Python خاصة ويجلب الاعتماديات، ومنها PyTorch وDiffusers وTransformers وPillow وFlask وCheroot. تحتفظ هذه المشاريع بتراخيصها وإشعاراتها الخاصة ولا يحل ترخيص التطبيق محلّها. تستدعي أدوات الصور والفيديو الملفين التنفيذيين ffmpeg وffprobe المثبّتين على حاسوبك؛ وهما غير مضمّنين في ZIP. يعتمد ترخيص FFmpeg على خيارات بنائه ومكوّناته. إذا أعدت توزيع بيئة مثبتة كاملة، فأرفق شروط الأطراف الأخرى الواجبة وامتثل لأي التزام بتوفير الشيفرة المصدرية لتلك المكوّنات."
+      },
+      {
+        "id": "5",
+        "title": "المعالجة المحلية واتصالات الشبكة",
+        "body": "تنتقل المطالبات والصور المرجعية من المتصفح إلى الحاسوب الذي يشغّل Image Lab، حيث ينفّذ النموذج المحلي المضبوط عملية التوليد. استخدام الهاتف عبر الشبكة المحلية يرسل المدخلات إلى ذلك الحاسوب، لا إلى خدمة توليد تديرها Zetalvx. يُستخدم الإنترنت للتثبيت والتنزيلات المختارة وبيانات المزوّدين والمصادقة وفحوص أمان الاعتماديات التي تستعلم عن أسماء الحزم وإصداراتها. تخضع هذه الطلبات لشروط المزوّدين. ترجمات الواجهة والدليل مضمّنة ولا تستخدم خدمة ترجمة عبر الإنترنت."
+      },
+      {
+        "id": "6",
+        "title": "الحسابات ورموز الوصول والمعلومات الحساسة",
+        "body": "تُحفظ حسابات التطبيق ورموز المزوّدين والمشاريع والإعدادات المسبقة والصور والتمثيلات الكامنة المحتفَظ بها والسجلات على الحاسوب المضيف. تحتوي ملفات تعريف النماذج على مسارات محلية وإعدادات ولا تصدّر رموز المزوّدين. احمِ الوصول إلى الحاسوب ولا تنشر مجلدات الأسرار أو نسخ الحسابات الاحتياطية أو السجلات دون تنقيح. حذف رمز محفوظ من Image Lab لا يلغيه لدى المزوّد؛ ألغِه أو جدّده هناك عند الحاجة. اتصل فقط بحواسيب وشبكات تثق بها."
+      },
+      {
+        "id": "7",
+        "title": "النسخ الاحتياطية والتحديثات والإزالة",
+        "body": "تحافظ التحديثات على المشاريع والحسابات والإعدادات المسبقة والنماذج الموجودة. انسخ البيانات المهمة احتياطيًا قبل الصيانة. يمكن لإلغاء التثبيت الاحتفاظ بالبيانات الشخصية أو حذف مجلد التثبيت ومحتوياته بعد تأكيد صريح. لا تُحذف ملفات النماذج المرتبطة الموجودة خارج المجلد. تبقى النسخ الاحتياطية والإعدادات المصدّرة حيث حفظتها. حذف تمثيل كامن لا يحذف صور PNG الناتجة عنه. لا يتحقق فحص أمني أو مجموع تحقق إلا من نطاقه المعلن، ولا يضمن أمان نموذج أو أصالة ناشره."
+      },
+      {
+        "id": "8",
+        "title": "النصوص الأصلية والمسؤولية والدعم",
+        "body": "تنطبق ملفات LICENSE وNOTICE الأصلية أدناه على التطبيق، ولا يحل هذا الشرح المترجم محلّها. يُقدَّم التطبيق كما هو، وفق أحكام الضمان والمسؤولية في ترخيصه والقانون المعمول به. Zetalvx Image Lab تطبيق مستقل وليس منتجًا رسميًا من Qwen أو Hugging Face أو Civitai. قبل مشاركة تشخيص عبر روابط المشروع، احذف رموز الوصول والمطالبات الخاصة والصور والمسارات الشخصية. فتح هذه الصفحة لا يرسل أي تقرير."
+      }
+    ],
+    "resources": [
+      "ترخيص التطبيق · النص الأصلي",
+      "نِسب المساهمات · النص الأصلي",
+      "Qwen Image 2.1 · مصدر الترخيص",
+      "Texture-Fix · المصدر والشروط",
+      "FFmpeg · معلومات الترخيص"
+    ]
+  }
+}

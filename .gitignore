@@ -1,0 +1,20 @@
+# Local Python environments, output and user data
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.pem
+*.key
+*.sqlite
+*.sqlite3
+/cache/
+/shared/
+/models/
+/runtime/
+/outputs/
+/tmp/
+.DS_Store
+Thumbs.db

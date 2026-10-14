@@ -1,0 +1,49 @@
+/* Additive Components / Decode Lab layout. Original branding/layout retained. */
+.qwen-component-card{padding:16px;margin:14px 0;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+#qwenComponents>summary,#qwenDecodeLab>summary{cursor:pointer}
+#qwenComponents summary small,#qwenDecodeLab summary small{display:block;color:var(--muted);margin-top:5px;font-weight:400;line-height:1.45}
+#qwenComponents .control-grid,#qwenDecodeLab .control-grid,.qwen-decode-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+#qwenComponents input,#qwenModelProfiles input,#qwenModelProfiles select,#qwenDecodeLab select{min-width:0;max-width:100%;width:100%}
+.qwen-decode-lab{margin-top:18px}.qwen-compare-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:16px 0}
+.qwen-compare-grid figure{min-width:0;margin:0;border:1px solid var(--line);border-radius:10px;padding:10px}
+.qwen-compare-grid img{display:block;width:100%;max-height:480px;object-fit:contain}.qwen-compare-grid figcaption{line-height:1.5;overflow-wrap:anywhere;margin-top:8px;font-size:13px;color:var(--muted)}
+#qwenLatentInfo,#qwenComponentsStatus,#qwenProfileStatus,#qwenVaeTestStatus,#qwenLatentQuota{overflow-wrap:anywhere;white-space:pre-wrap}
+#qwenDecodeResults:empty{display:none}.qwen-tile-options{margin:12px 0}
+@media(max-width:600px){#qwenComponents .control-grid,#qwenDecodeLab .control-grid,.qwen-decode-grid{grid-template-columns:1fr}.qwen-compare-grid{grid-template-columns:1fr}#qwenModelProfiles .inline-actions{gap:8px;flex-wrap:wrap}#qwenComponents button,#qwenModelProfiles button,#qwenDecodeLab button{white-space:normal}}
+
+/* 1.0.25 — catalog-first, collapsible Qwen model configuration. */
+.qwen-model-config{max-width:1100px;margin-inline:auto}
+.qwen-model-sections{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0 18px}
+.qwen-model-section{margin:0!important;border:1px solid var(--line);border-radius:13px;background:var(--panel2);min-width:0;overflow:hidden}
+.qwen-model-section>summary{min-height:72px;padding:14px 16px;display:flex;align-items:center;cursor:pointer}
+.qwen-model-section>summary span{min-width:0}
+.qwen-model-section>summary b{display:block;font-size:15px;color:var(--text)}
+.qwen-model-section>summary small{display:block;margin-top:4px;color:var(--muted);font-weight:400;line-height:1.4}
+.qwen-model-section>.hub-details-body{border-top:1px solid var(--line);padding:16px;background:var(--panel)}
+#qwenBaseModelSection,#qwenRuntimeSection,#qwenModelProfiles,#qwenAvailableComponents{grid-column:1/-1}
+.qwen-model-section label{margin-bottom:6px}
+.qwen-field-help{display:block;color:var(--muted);font-size:12px;line-height:1.45;margin:0 0 13px}
+.qwen-selected-path{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:start;gap:10px;margin:9px 0 14px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:var(--panel2);font-size:12px}
+.qwen-selected-path span{color:var(--muted);white-space:nowrap}
+.qwen-selected-path code{min-width:0;overflow-wrap:anywhere;word-break:break-word;color:var(--text)}
+.qwen-manual-path{margin:10px 0 14px!important;background:transparent}
+.qwen-manual-path>summary{font-size:13px;min-height:42px;padding:9px 11px}
+.qwen-manual-path>.hub-details-body{padding:12px}
+.qwen-profile-component-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:0 0 16px}
+.qwen-profile-component-summary>div{display:grid;grid-template-columns:minmax(105px,.8fr) minmax(0,1.2fr);gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel2);font-size:12px}
+.qwen-profile-component-summary span{color:var(--muted)}
+.qwen-profile-component-summary b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.qwen-model-save-actions{position:sticky;bottom:calc(var(--mobile-nav-h,0px) + 8px);z-index:8;padding:10px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--panel) 94%,transparent);backdrop-filter:blur(8px)}
+#qwenAvailableComponents .qwen-file-row{margin-bottom:8px}
+@media(max-width:760px){
+ .qwen-model-sections{grid-template-columns:1fr;gap:9px}
+ .qwen-model-section,#qwenBaseModelSection,#qwenRuntimeSection,#qwenModelProfiles,#qwenAvailableComponents{grid-column:1}
+ .qwen-model-section>summary{min-height:64px;padding:12px 13px}
+ .qwen-model-section>.hub-details-body{padding:13px}
+ .qwen-profile-component-summary{grid-template-columns:1fr}
+ .qwen-profile-component-summary>div{grid-template-columns:100px minmax(0,1fr)}
+ .qwen-selected-path{grid-template-columns:1fr;gap:4px}
+ .qwen-model-save-actions>*{flex:1 1 100%}
+}
+
+.qwen-file-invalid{opacity:.82;border-style:dashed}.qwen-invalid-help{display:block;color:var(--warning,#d6a85f);margin:.35rem 0 .55rem}

@@ -1,0 +1,59 @@
+/* 1.0.24: attached images live with the prompt. No duplicate active preview. */
+.qwen21-edition #imageCreatorLayout{display:block;width:100%;max-width:1100px;margin-inline:auto}
+.qwen21-edition #imageControlsColumn{width:100%;min-width:0;max-width:none}
+.qwen21-edition #view-image>.section-head,.qwen21-edition #imageOutputs,.qwen21-edition #qwenDecodeLab{max-width:1100px;margin-inline:auto}
+.qwen21-edition #qwenAttachments{margin:12px 0 20px;padding:16px;border:1px dashed var(--line2,var(--line));border-radius:13px;background:var(--panel2)}
+.qwen21-edition #qwenAttachments>.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 8px}
+.qwen21-edition #qwenAttachments>.section-head>div{display:flex;align-items:center;gap:12px;flex-wrap:wrap;text-align:start}
+.qwen21-edition #qwenInputCount{font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap;background:var(--panel);border-radius:7px;padding:4px 8px}
+.qwen21-edition #qwenAttachments .eyebrow{font-size:11px;letter-spacing:.1em}
+.qwen21-edition #qwenAttachments>p{font-size:13px;line-height:1.55;margin:6px 0 12px}
+.qwen21-edition #qwenAttachments .inline-actions{display:flex;flex-wrap:wrap;gap:8px}
+.qwen21-edition #qwenAttachments .inline-actions>*{flex:1 1 160px;min-height:44px;text-align:center;margin:0}
+.qwen21-edition #qwenClearInputs{font-size:12px;min-height:40px;padding:8px 12px}
+.qwen21-edition #qwenReferenceList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+.qwen21-edition .qwen-ref-row{min-width:0;grid-template-columns:48px minmax(0,1fr) auto;padding:10px;background:var(--panel);border-radius:10px}
+.qwen21-edition .qwen-ref-row>img{width:48px;height:48px;object-fit:contain;border-radius:7px}
+.qwen21-edition .qwen-ref-row>div{min-width:0;overflow-wrap:anywhere}
+.qwen21-edition .qwen-ref-row small{font-size:11px}
+.qwen21-edition .qwen-ref-actions{display:flex;gap:4px;flex-wrap:wrap}
+.qwen21-edition .qwen-ref-actions button{min-width:36px;min-height:40px;padding:5px}
+.qwen21-edition #qwenEffectiveSummary{line-height:1.6;font-size:13px}
+.qwen21-edition #prompt{min-height:118px;max-height:50vh}
+/* Guide: compact numbered navigator and a single article, never 15 repeated accordions. */
+.qwen21-edition .guide-reader-layout{display:grid;grid-template-columns:310px minmax(0,1fr);gap:24px;align-items:start}
+.qwen21-edition .guide-navigator{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px;scroll-margin-top:calc(var(--qwen-header-height) + 12px)}
+.qwen21-edition .guide-navigator-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.qwen21-edition .guide-index{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;margin:12px 0 0}
+.qwen21-edition .guide-index button.guide-topic-link{display:flex;gap:10px;align-items:center;min-width:0;min-height:40px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--text);padding:8px;font-size:13px;line-height:1.35;text-align:start;font-weight:500}
+.qwen21-edition .guide-index button.guide-topic-link:hover{background:var(--panel2)}
+.qwen21-edition .guide-index button.guide-topic-link.active{border-color:var(--accent);background:var(--accent-soft,var(--panel2))}
+.qwen21-edition .guide-topic-number{flex:0 0 21px;font-size:10px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.qwen21-edition .guide-reader{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:22px;scroll-margin-top:calc(var(--qwen-header-height) + 12px);min-width:0}
+.qwen21-edition .guide-reader-top{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:12px;margin-bottom:16px}
+.qwen21-edition .guide-reader h3{font-size:23px;margin:0 0 18px;line-height:1.35}
+.qwen21-edition .guide-reader .qwen-guide-body{padding:0;color:var(--muted);font-size:15px;line-height:1.75}
+.qwen21-edition .guide-reader .qwen-guide-body p{margin:0 0 16px}
+.qwen21-edition .guide-reader-actions{margin:20px 0}
+.qwen21-edition .guide-reader-bottom{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+.qwen21-edition .guide-reader-bottom>*{white-space:normal;flex:1;min-height:44px}
+[dir=rtl] .qwen21-edition .qwen-ref-actions{direction:ltr}
+[dir=rtl] .qwen21-edition code,[dir=rtl] .qwen21-edition [data-technical]{direction:ltr;unicode-bidi:isolate}
+@media(max-width:1100px){.qwen21-edition .guide-reader-layout{grid-template-columns:1fr}.qwen21-edition .guide-index{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){
+ .qwen21-edition #imageControlsColumn{padding:16px}
+ .qwen21-edition #qwenAttachments{padding:12px;margin-block:10px 18px}
+ .qwen21-edition #qwenReferenceList{grid-template-columns:minmax(0,1fr)}
+ .qwen21-edition .guide-reader-layout{gap:16px}
+ .qwen21-edition .guide-index{grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+ .qwen21-edition .guide-index button.guide-topic-link{min-height:44px;gap:6px;padding:7px 5px;font-size:12px}
+ .qwen21-edition .guide-reader{padding:16px}
+ .qwen21-edition .guide-reader h3{font-size:20px}
+ .qwen21-edition .guide-reader .qwen-guide-body{font-size:14px}
+ .qwen21-edition .guide-navigator{padding:12px}
+}
+@media(max-width:380px){.qwen21-edition #qwenAttachments .inline-actions>*{flex-basis:100%}.qwen21-edition .qwen-ref-row{grid-template-columns:40px minmax(0,1fr)}.qwen21-edition .qwen-ref-actions{grid-column:1/-1;justify-content:flex-end}.qwen21-edition .guide-index button.guide-topic-link{font-size:11px}}
+
+/* 1.0.27: keep the two distinct image actions readable inside narrow cards. */
+.asset-actions.qwen-primary-actions{display:flex;flex-wrap:wrap;gap:8px}
+.asset-actions.qwen-primary-actions>button{flex:1 1 140px;min-width:0;word-break:normal;overflow-wrap:break-word}
