@@ -7,6 +7,18 @@ Source code by **ZETALVX** · [Apache-2.0 for the application](LICENSE) · Unoff
 >
 > Application source: Windows **1.0.76** / Linux **1.0.75**. These share the same generation interface and benchmark-scene features; the platform version difference comes from a Windows-only installer correction that is **not part of this repository**.
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/1.png" height="300">
+  <img src="screenshots/2.png" height="300">
+</p>
+
+<p align="center">
+  <img src="screenshots/3.5.png" height="300">
+  <img src="screenshots/4.png" height="300">
+</p>
+
 ## Features
 
 - **Create / Edit:** text-to-image, single- and multi-image editing (up to ten reference images) and optional transparent-PNG output, subject to model/backend capability.
