@@ -30,7 +30,7 @@ Source code by **ZETALVX** · [Apache-2.0 for the application](LICENSE) · Unoff
 </p>
 
 <p align="center">
-  <img src="screenshots/comparison.png" width="640" alt="Comparison">
+  <img src="screenshots/comparison_.png" width="640" alt="Comparison">
   <br>
   <sub><b>Image Comparison</b></sub>
 </p>
