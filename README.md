@@ -15,8 +15,8 @@ Source code by **ZETALVX** · [Apache-2.0 for the application](LICENSE) · Unoff
 </p>
 
 <p align="center">
-  <img src="screenshots/3.5.png" height="300">
-  <img src="screenshots/4.png" height="300">
+  <img src="screenshots/3.png" height="300">
+  <img src="screenshots/comparison.png" height="300">
 </p>
 
 ## Features
