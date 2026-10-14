@@ -9,14 +9,30 @@ Source code by **ZETALVX** · [Apache-2.0 for the application](LICENSE) · Unoff
 
 ## Screenshots
 
+## Screenshots
+
 <p align="center">
-  <img src="screenshots/1.png" height="300">
-  <img src="screenshots/2.png" height="300">
+  <img src="screenshots/1.png" width="640" alt="Create / Edit">
+  <br>
+  <sub><b>Image Generation & Editing</b></sub>
 </p>
 
 <p align="center">
-  <img src="screenshots/3.png" height="300">
-  <img src="screenshots/comparison.png" height="300">
+  <img src="screenshots/2.png" width="640" alt="Library">
+  <br>
+  <sub><b>Image Library</b></sub>
+</p>
+
+<p align="center">
+  <img src="screenshots/3.png" width="640" alt="Queue">
+  <br>
+  <sub><b>Generation Queue & History</b></sub>
+</p>
+
+<p align="center">
+  <img src="screenshots/comparison.png" width="640" alt="Comparison">
+  <br>
+  <sub><b>Image Comparison</b></sub>
 </p>
 
 ## Features
